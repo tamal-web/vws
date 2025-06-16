@@ -35,6 +35,9 @@ importers:
       tailwind-merge:
         specifier: ^3.3.1
         version: 3.3.1
+      website:
+        specifier: 'link:'
+        version: 'link:'
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3

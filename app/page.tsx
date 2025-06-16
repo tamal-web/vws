@@ -42,9 +42,10 @@ export default function Home() {
             <div className="relative w-[50dvw] p-3 bg-brown rounded-[1.7rem]">
               <div className="rounded-full  bg-[rgba(255,255,255,0.3)] transform backdrop-blur-[0.9rem] h-[3.8rem] w-[3.8rem] absolute z-[10] flex items-center justify-center top-[50%] left-[50%] transfrom translate-y-[-50%] translate-x-[-50%]">
                 <Image
-                  src={"/img/icons/play.png"}
-                  width={68}
-                  height={68}
+                  src={"/img/vectoricon/vidplay.png"}
+                  width={112}
+                  height={112}
+                  sizes="auto"
                   alt="play"
                   className="w-full h-auto relative object-cover m-[0.7rem] ml-[1rem]!"
                 />
