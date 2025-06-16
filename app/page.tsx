@@ -7,7 +7,7 @@ export default function Home() {
       <div className="hero w-full flex flex-col items-center">
         <div className="relative">
           <Image
-            src={"/logos/NgoLogoBlue.png"}
+            src={"/img/logos/NgoLogoBlue.png"}
             alt="Logo"
             width={130}
             height={0}
@@ -21,7 +21,7 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center">
             <div className="w-full flex flex-row items-star gap-[0.7rem]">
               <Image
-                src={"/arrows/leftArrow.png"}
+                src={"/img/arrows/leftArrow.png"}
                 alt="LeftArrow"
                 width={220}
                 height={276}
@@ -33,7 +33,7 @@ export default function Home() {
               </h1>
             </div>
             <Image
-              src={"/hero/left.png"}
+              src={"/img/hero/left.png"}
               alt="LeftPics"
               width={2613}
               height={1743}
@@ -43,7 +43,7 @@ export default function Home() {
           <div className="w-1/2 relative flex-1 flex justify-center items-center h-auto">
             <div className="relative w-[50dvw] p-3 bg-brown rounded-[1.7rem]">
               <Image
-                src={"/hero/center.png"}
+                src={"/img/hero/center.png"}
                 width={2613}
                 height={1742}
                 // fill
@@ -54,7 +54,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center justify-center">
             <Image
-              src={"/hero/rightt.png"}
+              src={"/img/hero/rightt.png"}
               alt="RightPic"
               width={2613}
               height={1742}
@@ -65,7 +65,7 @@ export default function Home() {
                 Event
               </h1>
               <Image
-                src={"/arrows/rightArrow.png"}
+                src={"/img/arrows/rightArrow.png"}
                 alt="LeftArrow"
                 width={179}
                 height={194}
