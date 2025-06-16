@@ -40,13 +40,13 @@ export default function Home() {
           </div>
           <div className="w-1/2 relative flex-1 flex justify-center items-center h-auto">
             <div className="relative w-[50dvw] p-3 bg-brown rounded-[1.7rem]">
-              <div className="rounded-full p-[0.7rem] pl-[1rem]! bg-[rgba(255,255,255,0.3)] transform backdrop-blur-[0.9rem] h-[3.8rem] w-[3.8rem] absolute z-[10] flex items-center justify-center top-[50%] left-[50%] transfrom translate-y-[-50%] translate-x-[-50%]">
+              <div className="rounded-full  bg-[rgba(255,255,255,0.3)] transform backdrop-blur-[0.9rem] h-[3.8rem] w-[3.8rem] absolute z-[10] flex items-center justify-center top-[50%] left-[50%] transfrom translate-y-[-50%] translate-x-[-50%]">
                 <Image
                   src={"/img/icons/play.png"}
-                  alt="play"
                   width={68}
                   height={68}
-                  className="w-full h-auto relative"
+                  alt="play"
+                  className="w-full h-auto relative object-cover m-[0.7rem] ml-[1rem]!"
                 />
               </div>
               <Image
@@ -54,7 +54,7 @@ export default function Home() {
                 width={2613}
                 height={1742}
                 alt="mainPic"
-                className="w-[50dvw h-aut w-full h-auto relative object-cover rounded-2xl"
+                className="w-full h-auto relative object-cover rounded-2xl"
               />
             </div>
           </div>
