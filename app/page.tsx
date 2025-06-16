@@ -1,6 +1,4 @@
 import Image from "next/image";
-// import { NavigationMenuDemo } from "./comp/NavigationComp";
-
 export default function Home() {
   return (
     <div className="w-full">
@@ -11,7 +9,7 @@ export default function Home() {
             alt="Logo"
             width={130}
             height={0}
-            className="h-auto relative mt-[5rem]"
+            className="h-auto relative mt-[1.2rem]"
           />
         </div>
         <h1 className="font-heading font-[600] text-[4.6rem] text-brand leading-24 text-center">
@@ -19,7 +17,7 @@ export default function Home() {
         </h1>
         <div className="hero-images w-full flex flex-row h-auto px-[2rem] gap-[1rem] mt-[2rem]">
           <div className="flex flex-col items-center justify-center">
-            <div className="w-full flex flex-row items-star gap-[0.7rem]">
+            <div className="w-full flex flex-row items-star gap-[0.7rem] transform translate-y-[1rem]">
               <Image
                 src={"/img/arrows/leftArrow.png"}
                 alt="LeftArrow"
@@ -42,11 +40,19 @@ export default function Home() {
           </div>
           <div className="w-1/2 relative flex-1 flex justify-center items-center h-auto">
             <div className="relative w-[50dvw] p-3 bg-brown rounded-[1.7rem]">
+              <div className="rounded-full p-[0.7rem] pl-[1rem]! bg-[rgba(255,255,255,0.3)] transform backdrop-blur-[0.9rem] h-[3.8rem] w-[3.8rem] absolute z-[10] flex items-center justify-center top-[50%] left-[50%] transfrom translate-y-[-50%] translate-x-[-50%]">
+                <Image
+                  src={"/img/icons/play.png"}
+                  alt="play"
+                  width={68}
+                  height={68}
+                  className="w-full h-auto relative"
+                />
+              </div>
               <Image
                 src={"/img/hero/center.png"}
                 width={2613}
                 height={1742}
-                // fill
                 alt="mainPic"
                 className="w-[50dvw h-aut w-full h-auto relative object-cover rounded-2xl"
               />

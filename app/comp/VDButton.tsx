@@ -1,10 +1,11 @@
-import { Button } from "@/components/ui/button";
+// import { BrandButton } from "@/components/ui/button";
+import { BrandButton } from "@/app/comp/brand-button";
 
 export default function VDButton() {
   return (
-    <div>
-      <Button>Volunter</Button>
-      <Button>Donate</Button>
+    <div className="border-1 border-brand rounded-0">
+      <BrandButton variant={"brandPrimary"}>Volunter</BrandButton>
+      <BrandButton>Donate</BrandButton>
     </div>
   );
 }

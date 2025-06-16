@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-// import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from "lucide-react";
+
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 
@@ -59,15 +59,7 @@ export function NavigationMenuDemo() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          {/* <NavTrigger
-            className={cn(
-              pathName === "/" && "underline underline-offset-4",
-              "hover:underline! bg-transparen hover:bg-transparent!"
-            )}
-            textContent="Home"
-            pathName=""
-          /> */}
-          <NavTrigger textContent="Home" pathName="/" />
+          <NavTrigger textContent="Home" pathName="/" isLink={true} />
           <NavigationMenuContent>
             <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -98,7 +90,7 @@ export function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavTrigger textContent="About Us" pathName="/about" />
+          <NavTrigger textContent="About Us" pathName="/about" isLink={true} />
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               {components.map((component) => (
@@ -114,16 +106,6 @@ export function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          {/* <NavigationMenuLink
-            asChild
-            className={cn(
-              pathName === "/contact" && "underline underline-offset-4",
-              "text-[1.rem hover:underline! underline-offset-4 bg-transparent!",
-              navigationMenuTriggerStyle()
-            )}
-          >
-            <Link href="/contact">Contact</Link>
-          </NavigationMenuLink> */}
           <NavLink textContent="Contact" pathName="/contact" />
         </NavigationMenuItem>
       </NavigationMenuList>
@@ -155,21 +137,27 @@ function NavTrigger({
   textContent,
   pathName,
   className,
+  isLink,
 }: {
   textContent: string;
   pathName: string;
   className?: string;
+  isLink: boolean;
 }) {
   const path = usePathname();
   return (
     <NavigationMenuTrigger
       className={cn(
         path === pathName && "underline underline-offset-4",
-        "text-[1.1rem] hover:underline! underline-offset-4 bg-transparent! hover:text-black!",
+        "text-[1.1rem] hover:underline! underline-offset-4 bg-transparent!",
         className
       )}
     >
-      {textContent}
+      {isLink ? (
+        <Link href={pathName}>{textContent}</Link>
+      ) : (
+        <span>{textContent}</span>
+      )}
     </NavigationMenuTrigger>
   );
 }
