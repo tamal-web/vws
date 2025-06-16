@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+// import Image from "next/image";
 import { NavigationMenuDemo } from "./NavigationComp";
 import { usePathname } from "next/navigation";
 import VDButton from "./VDButton";
