@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { NavigationMenuDemo } from "./comp/NavigationComp";
+// import { NavigationMenuDemo } from "./comp/NavigationComp";
 
 export default function Home() {
   return (
