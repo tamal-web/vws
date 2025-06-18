@@ -1,8 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
-import { InstaIcon } from "./comp/socialIcon/insta-icon";
-import { FgIcon } from "./comp/socialIcon/fg-icon";
-import { XIcon } from "./comp/socialIcon/x-icon";
+// import Footer from "@/app/comp/footer/footer";
+
 export default function Home() {
   return (
     <div className="w-screen">
@@ -125,65 +123,26 @@ export default function Home() {
           <div className="w-full flex flex-row px-[3rem] mt-[2.5rem] text-[1.4rem] gap-[4.4rem] box-border">
             <p className="font-heading flex-1">
               <span className="font-semibold">What We Do?</span>
-              <br /> We organize medical camps, run educational and vocational
-              {"\u2011"}training programs, and support disaster relief—always
-              serving without discrimination of caste, creed, or religion.
+              <br /> We run educational and skill
+              <span className="leading-[1rem]">
+                {"\u2011"}training programs, organize medical camps, encourage
+                sports and support youth and startups, serving without
+                discrimination of caste, creed, or religion.
+              </span>
             </p>
-            <p className="font-heading flex-1">
+            <p className="font-heading flex-1 ">
               <span className="font-semibold">Why It Matters?</span>
-              <br /> By promoting health, education, and socio{"\u2011"}economic
-              welfare, we empower villagers to build brighter futures—together.
+              <br />
+              <span className="leading-[1.9rem]">
+                By promoting education, skill development, health, and socio
+                {"\u2011"}economic welfare, we empower Startups, Youth and
+                people in rural areas to build brighter futures—together.
+              </span>
             </p>
           </div>
         </div>
       </div>
-      <div className="footer bg-footer w-full px-[5rem] py-[3.6rem] flex flex-row gap-[2rem] items-center justify-center">
-        <div className="flex-1 h-full border-r-2 border-r-[rgba(255,255,255,0.5)] flex flex-col items-start justify-center gap-[2rem]">
-          <Image
-            src={"/img/logo/wFullLogoNgo.png"}
-            alt="footerLogoImage"
-            width={3571}
-            height={1131}
-            sizes="auto"
-            className="w-[24rem] h-auto"
-          />
-          <div className="h-full">
-            <h1 className="text-white font-heading text-[1.4rem] max-w-[90%] leading-[1.86rem]">
-              Vrinda Welfare Society is a registered non{"\u2011"}profit based
-              in Punjab, dedicated to uplifting rural and underserved
-              communities across the state.
-            </h1>
-          </div>
-          <div className="social w-full flex flex-row items-center justify-end gap-[0.65rem] pr-[1.5rem]">
-            <Link href={"https://instagram.com/vrindawelfare"}>
-              <div className="insta h-[3.8rem] w-[3.8rem] p-[0.88rem] items-center justify-center rounded-full border-1 border-white fill-white hover:fill-black  hover:bg-white">
-                <InstaIcon />
-              </div>
-            </Link>
-            <Link href={"https://facebook.com/vrindawelfare"}>
-              <div className="fg h-[3.8rem] w-[3.8rem] p-[0.6rem] pr-[0.78rem] items-center justify-center rounded-full border-1 border-white fill-white hover:fill-black  hover:bg-white">
-                <FgIcon />
-              </div>
-            </Link>
-            <Link href={"https://x.com/vrindawelfare"}>
-              <div className="x h-[3.8rem] w-[3.8rem] p-[0.98rem] items-center justify-center rounded-full border-1 border-white fill-white hover:fill-black  hover:bg-white">
-                <XIcon />
-              </div>
-            </Link>
-          </div>
-        </div>
-
-        <div className="flex-1 h-full">
-          <div></div>
-        </div>
-      </div>
-      <div className="bg-footerSecondary px-[8rem] py-[2rem] flex flex-row justify-between text-white">
-        <h1>© 2025 Vrinda Welfare. All Rights Reserved</h1>
-        <Link href={"/privacy-policy"}>
-          {" "}
-          <h1>Privacy Policy</h1>
-        </Link>
-      </div>
+      {/* <Footer /> */}
     </div>
   );
 }
