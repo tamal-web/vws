@@ -13,13 +13,13 @@ export default function Home() {
             alt="Logo"
             width={130}
             height={0}
-            className="h-auto relative mt-[6.2rem]"
+            className="h-auto relative mt-[2.2rem]"
           />
         </div>
         <h1 className="font-heading font-[600] text-[4.6rem] text-brand leading-[5.7rem] text-center mt-[0.6rem]">
           Seeds of Learning, <br /> Fields of Hope
         </h1>
-        <div className="hero-images w-full flex flex-row h-auto px-[2rem] gap-[1rem] mt-[1.1rem]">
+        <div className="hero-images w-full flex flex-row h-auto px-[2rem] gap-[1rem] mt-[1.45rem]">
           <div className="flex flex-col items-center justify-center">
             <div className="w-full flex flex-row items-star gap-[0.7rem] transform translate-y-[1rem]">
               <Image

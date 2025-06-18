@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <main className="relative h-[100dvh] w-[100dvw]">
+        <main className="relative w-[100dvw]">
           {" "}
           <Nav />
           {children}
