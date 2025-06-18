@@ -9,7 +9,7 @@ export default function Home() {
       <div className="hero w-full flex flex-col items-center">
         <div className="relative">
           <Image
-            src={"/img/logos/NgoLogoBlue.png"}
+            src={"/img/logo/NgoLogoBlue.png"}
             alt="Logo"
             width={130}
             height={0}
