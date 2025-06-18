@@ -13,13 +13,13 @@ export default function Home() {
             alt="Logo"
             width={130}
             height={0}
-            className="h-auto relative mt-[5.2rem]"
+            className="h-auto relative mt-[6.2rem]"
           />
         </div>
-        <h1 className="font-heading font-[600] text-[4.6rem] text-brand leading-24 text-center">
+        <h1 className="font-heading font-[600] text-[4.6rem] text-brand leading-[5.7rem] text-center mt-[0.6rem]">
           Seeds of Learning, <br /> Fields of Hope
         </h1>
-        <div className="hero-images w-full flex flex-row h-auto px-[2rem] gap-[1rem] mt-[2rem]">
+        <div className="hero-images w-full flex flex-row h-auto px-[2rem] gap-[1rem] mt-[1.1rem]">
           <div className="flex flex-col items-center justify-center">
             <div className="w-full flex flex-row items-star gap-[0.7rem] transform translate-y-[1rem]">
               <Image
@@ -86,7 +86,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=" about border-brown border-1 items-center flex flex-col mt-[5rem] mb-[10rem] py-[3rem] px-[2.5rem] rounded-[2rem] mx-[2.5rem]">
+      <div className=" about border-brown border-1 items-center flex flex-col mt-[5rem] mb-[5rem] py-[3rem] px-[2.5rem] rounded-[2rem] mx-[2.5rem]">
         <span className="badge px-3 py-2 rounded-full border-1 border-brown mb-[1rem]">
           About Us
         </span>
