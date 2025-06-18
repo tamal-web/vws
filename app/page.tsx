@@ -1,5 +1,4 @@
 import Image from "next/image";
-// import Footer from "@/app/comp/footer/footer";
 
 export default function Home() {
   return (
@@ -19,17 +18,18 @@ export default function Home() {
         </h1>
         <div className="hero-images w-full flex flex-row h-auto px-[2rem] gap-[1rem] mt-[1.45rem]">
           <div className="flex flex-col items-center justify-center">
-            <div className="w-full flex flex-row items-star gap-[0.7rem] transform translate-y-[1rem]">
+            <div className="w-full flex flex-row items-star lg:gap-[0.59rem] md:gap-[0.28rem] transform translate-y-[1rem]  pr-[0.7rem]">
               <Image
                 src={"/img/arrow/leftArrow.png"}
                 alt="LeftArrow"
                 width={220}
                 height={276}
-                className="max-h-[28rem] w-auto"
+                sizes="auto"
+                className="lg:max-w-[7.9rem] md:max-w-[6.4rem]! h-auto opacity-95 flex-1"
               />
-              <h1 className=" text-[1.5rem] font-caption transform translate-y-[-1rem] leading-8">
+              <h1 className="opacity-70 lg:text-[1.5rem] md:text-[1.3rem] text-[1rem] font-caption transform translate-y-[-1rem] lg:leading-[1.84rem] md:leading-[1.5rem] text-black">
                 Keeping <br />
-                Updated
+                updated
               </h1>
             </div>
             <Image
@@ -69,8 +69,8 @@ export default function Home() {
               height={1742}
               className="w-[20rem] h-auto relative object-cover rounded-[1.7rem] border-[2px] border-white transform rotate-[9deg]"
             />
-            <div className="w-full flex flex-row items-end justify-center gap-[0.7rem]">
-              <h1 className=" text-[1.5rem] font-caption transform translate-y-[0.5rem] leading-8">
+            <div className="w-full flex flex-row items-end justify-center lg:gap-[0.6rem] md:gap-[0.4rem]">
+              <h1 className="opacity-60 text-black lg:text-[1.5rem] md:text-[1.3rem] text-[0.9rem] font-caption transform translate-y-[0.36rem] lg:leading-8 md:leading-[1.6rem]">
                 Event
               </h1>
               <Image
@@ -78,23 +78,24 @@ export default function Home() {
                 alt="LeftArrow"
                 width={179}
                 height={194}
-                className="max-h-[5rem] w-auto"
+                sizes="auto"
+                className="lg:max-w-[5.4rem]! md:max-w-[4.3rem]! flex-1 h-auto! opacity-65"
               />
             </div>
           </div>
         </div>
       </div>
-      <div className=" about border-brown border-1 items-center flex flex-col mt-[5rem] mb-[5rem] py-[3rem] px-[2.5rem] rounded-[2rem] mx-[2.5rem]">
-        <span className="badge px-3 py-2 rounded-full border-1 border-brown mb-[1rem]">
+      <div className=" about border-brown border-1 items-center flex flex-col mt-[5rem] mb-[5rem] pt-[2.8rem] pb-[2.4rem] px-[2.5rem] rounded-[2rem] mx-[2.5rem] gap-0">
+        <span className="badge px-3 py-2 rounded-full border-1 border-brown mb-[1.5rem]">
           About Us
         </span>
         <div className="w-full flex flex-col">
-          <h1 className="font-headingBold text-[3rem] font-[500] max-w-[85%] leading-16 mb-[2rem]">
-            Vrinda Welfare Society is a registered non{"\u2011"}profit,
-            dedicated to uplifting rural and underserved communities across the
-            state
+          <h1 className="font-headingBold lg:text-[2.8rem] md:text-[2.1rem] font-[600] max-w-[88%] md:leading-[2.76rem] lg:leading-[3.7rem] lg:mb-[3rem] md:mb-[1.8rem]">
+            Vrinda Welfare Society is a registered non{"\u2011"}profit
+            organisation, dedicated to uplift rural and underserved communities
+            across the state.
           </h1>
-          <div className="images h-[22rem] flex flex-row justify-start items-center overflow-x-auto gap-[1.6rem] no-scrollbar">
+          <div className="images lg:h-[21rem] md:h-[16rem] flex flex-row justify-start items-center overflow-x-auto gap-[1.6rem] no-scrollbar">
             <Image
               src={"/img/about/1.png"}
               alt="1"
@@ -120,7 +121,7 @@ export default function Home() {
               className="h-full w-auto shrink-0 rounded-[1.7rem]"
             />
           </div>
-          <div className="w-full flex flex-row px-[3rem] mt-[2.5rem] text-[1.4rem] gap-[4.4rem] box-border">
+          <div className=" items-start justify-center w-full flex flex-row lg:px-[3rem] md:px-[1.8rem] mt-[2.8rem] lg:text-[1.4rem] md:text-[1.2rem] lg:gap-[4.4rem] md:gap-[2.4rem] box-border">
             <p className="font-heading flex-1">
               <span className="font-semibold">What We Do?</span>
               <br /> We run educational and skill
@@ -142,7 +143,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* <Footer /> */}
     </div>
   );
 }

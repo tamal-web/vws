@@ -1,4 +1,3 @@
-// import { BrandButton } from "@/components/ui/button";
 import { BrandButton } from "@/app/comp/brand-button";
 
 export default function VDButton() {

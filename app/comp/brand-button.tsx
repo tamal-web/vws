@@ -32,7 +32,8 @@ const buttonVariants = cva(
         sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
         lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
         icon: "size-9",
-        brand: "h-12 px-5 py-2 has-[>svg]:px-3 text-[1rem]",
+        brand:
+          "md:h-12 md:px-5 md:py-2 has-[>svg]:px-3 md:text-[1rem] md:opacity-100 h-9 px-3 py-[0.35rem] text-[0.8rem] opacity-40",
       },
     },
     defaultVariants: {
