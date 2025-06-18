@@ -82,12 +82,15 @@
 }
 @theme {
   --font-heading: "AbhyaLibre-Regular";
+  --font-headingBold: "AbhyaLibre-Bold";
   --font-body: "Aboreto";
   --font-caption: "Acme";
   --color-brand: #003366;
   --color-brandLight: #c6dbff;
   --color-bg: #ffeac6;
   --color-brown: #473108;
+  --color-footer: #404040;
+  --color-footerSecondary: #474747;
 }
 
 .dark {
@@ -155,4 +158,12 @@ body {
 }
 * {
   box-sizing: border-box !important;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
