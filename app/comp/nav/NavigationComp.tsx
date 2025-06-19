@@ -70,13 +70,13 @@ export function NavigationMenuDemo() {
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <Link
-                    className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none focus:shadow-md"
+                    className="to-[#6985b6] from-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none focus:shadow-md text-white!"
                     href="/"
                   >
                     <div className="mt-4 mb-2 text-lg font-medium">
                       shadcn/ui
                     </div>
-                    <p className="text-muted-foreground text-sm leading-tight">
+                    <p className="text-brand text-sm leading-tight">
                       Beautifully designed components built with Tailwind CSS.
                     </p>
                   </Link>

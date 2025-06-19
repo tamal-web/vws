@@ -119,7 +119,7 @@ export default function Footer() {
                   href={"/about-team"}
                   className="hover:underline underline-offset-[3px]"
                 >
-                  Rural Empowrement
+                  Rural Empowerment
                 </Link>
                 <Link
                   href={"/gallery"}
@@ -153,13 +153,13 @@ export default function Footer() {
                   href={"/events"}
                   className="hover:underline underline-offset-[3px]"
                 >
-                  Individual Support
+                  Individual
                 </Link>
                 <Link
                   href={"/about-team"}
                   className="hover:underline underline-offset-[3px]"
                 >
-                  Coorporates Partnership
+                  Corporates
                 </Link>
                 <Link
                   href={"/gallery"}
