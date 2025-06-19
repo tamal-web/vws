@@ -8,12 +8,13 @@ export default function Home() {
           <Image
             src={"/img/logo/NgoLogoBlue.png"}
             alt="Logo"
-            width={130}
-            height={0}
-            className="h-auto relative mt-[2.2rem]"
+            width={1413}
+            height={1131}
+            sizes="auto"
+            className="md:w-[8.125rem] w-[5.5rem] h-auto relative mt-[2.2rem]"
           />
         </div>
-        <h1 className="font-heading font-[600] text-[4.6rem] text-brand leading-[5.7rem] text-center mt-[0.6rem]">
+        <h1 className="font-heading font-[600] text-[2.8rem] md:text-[4.6rem] text-brand md:leading-[5.7rem] leading-[3.1rem] text-center mt-[0.6rem]">
           Seeds of Learning, <br /> Fields of Hope
         </h1>
         <div className="hero-images w-full flex flex-row h-auto px-[2rem] gap-[1rem] mt-[1.45rem]">
@@ -57,6 +58,7 @@ export default function Home() {
                 width={2613}
                 height={1742}
                 alt="mainPic"
+                sizes="auto"
                 className="w-full h-auto relative object-cover rounded-2xl"
               />
             </div>
@@ -85,7 +87,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=" about border-brown border-1 items-center flex flex-col mt-[5rem] mb-[5rem] pt-[2.8rem] pb-[2.4rem] px-[2.5rem] rounded-[2rem] mx-[2.5rem] gap-0">
+      <div className=" about border-brown border-1 items-center flex flex-col mt-[5rem]  pt-[2.8rem] pb-[2.4rem] px-[2.5rem] rounded-[2rem] mx-[2.5rem] gap-0">
         <span className="badge px-3 py-2 rounded-full border-1 border-brown mb-[1.5rem]">
           About Us
         </span>
@@ -95,31 +97,46 @@ export default function Home() {
             organisation, dedicated to uplift rural and underserved communities
             across the state.
           </h1>
-          <div className="images lg:h-[21rem] md:h-[16rem] flex flex-row justify-start items-center overflow-x-auto gap-[1.6rem] no-scrollbar">
-            <Image
-              src={"/img/about/1.png"}
-              alt="1"
-              width={2524}
-              height={1752}
-              sizes="auto"
-              className="h-full w-auto shrink-0 rounded-[1.7rem]"
-            />
-            <Image
-              src={"/img/about/2.png"}
-              alt="2"
-              width={2493}
-              height={1752}
-              sizes="auto"
-              className="h-full w-auto shrink-0 rounded-[1.7rem]"
-            />
-            <Image
-              src={"/img/about/3.png"}
-              alt="3"
-              width={2580}
-              height={1752}
-              sizes="auto"
-              className="h-full w-auto shrink-0 rounded-[1.7rem]"
-            />
+          <div className="images lg:h-[21rem] md:h-[16rem] flex flex-row justify-start items-center overflow-x-scroll gap-[1.6rem] no-scrollbar">
+            <div className="relative group shadow-lg h-full shrink-0 overflow-hidden rounded-[1.7rem]">
+              <div className="absolute inset-0 bg-[rgba(0,0,0,0.25)] opacity-0 group-hover:opacity-100 transform backdrop-blur-[0.25rem] flex text-center items-center justify-center transition-opacity duration-150 text-white text-[1.6rem] font-[600]">
+                Medical Camps
+              </div>
+              <Image
+                src={"/img/about/1.png"}
+                alt="1"
+                width={2524}
+                height={1752}
+                sizes="auto"
+                className="h-full object-cover w-auto rounded-[1.7rem]"
+              />
+            </div>
+            <div className="relative group shadow-lg h-full shrink-0 overflow-hidden rounded-[1.7rem]">
+              <div className="absolute inset-0 bg-[rgba(0,0,0,0.25)] opacity-0 group-hover:opacity-100 transform backdrop-blur-[0.2rem] flex text-center items-center justify-center transition-opacity duration-150 text-white text-[1.6rem] font-[600]">
+                Educational Classes
+              </div>
+              <Image
+                src={"/img/about/2.png"}
+                alt="2"
+                width={2493}
+                height={1752}
+                sizes="auto"
+                className="h-full w-auto shrink-0 rounded-[1.7rem]"
+              />
+            </div>
+            <div className="relative group shadow-lg h-full shrink-0 overflow-hidden rounded-[1.7rem]">
+              <div className="absolute inset-0 bg-[rgba(0,0,0,0.25)] opacity-0 group-hover:opacity-100 transform backdrop-blur-[0.25rem] flex text-center items-center justify-center transition-opacity duration-150 text-white text-[1.6rem] font-[600]">
+                Skill-Development Programs
+              </div>
+              <Image
+                src={"/img/about/3.png"}
+                alt="3"
+                width={2580}
+                height={1752}
+                sizes="auto"
+                className="h-full w-auto rounded-[1.7rem]"
+              />
+            </div>
           </div>
           <div className=" items-start justify-center w-full flex flex-row lg:px-[3rem] md:px-[1.8rem] mt-[2.8rem] lg:text-[1.4rem] md:text-[1.2rem] lg:gap-[4.4rem] md:gap-[2.4rem] box-border">
             <p className="font-heading flex-1">

@@ -1,10 +1,18 @@
+"use client";
 import { BrandButton } from "@/app/comp/brand-button";
+import { useRouter } from "next/navigation";
 
 export default function VDButton() {
+  const router = useRouter();
   return (
     <div className="border-1 border-brand rounded-0">
-      <BrandButton variant={"brandPrimary"}>Volunter</BrandButton>
-      <BrandButton>Donate</BrandButton>
+      <BrandButton
+        onClick={() => router.push("/volunteer")}
+        variant={"brandPrimary"}
+      >
+        Volunteer
+      </BrandButton>
+      <BrandButton onClick={() => router.push("/donate")}>Donate</BrandButton>
     </div>
   );
 }

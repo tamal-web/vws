@@ -59,7 +59,12 @@ export function NavigationMenuDemo() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavTrigger textContent="Home" pathName="/" isLink={true} />
+          <NavItem
+            textContent="Home"
+            pathName="/"
+            isLink={true}
+            isTrigger={true}
+          />
           <NavigationMenuContent>
             <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -90,7 +95,12 @@ export function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavTrigger textContent="About Us" pathName="/about" isLink={true} />
+          <NavItem
+            textContent="About Us"
+            pathName="/about"
+            isLink={true}
+            isTrigger={true}
+          />
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               {components.map((component) => (
@@ -106,7 +116,12 @@ export function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavLink textContent="Contact" pathName="/contact" />
+          <NavItem
+            textContent="Contact"
+            pathName="/contact"
+            isLink={true}
+            isTrigger={false}
+          />
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
@@ -133,23 +148,27 @@ function ListItem({
   );
 }
 
-function NavTrigger({
+function NavItem({
   textContent,
   pathName,
   className,
   isLink,
+  isTrigger,
 }: {
   textContent: string;
   pathName: string;
   className?: string;
   isLink: boolean;
+  isTrigger: boolean;
 }) {
   const path = usePathname();
-  return (
+  const TriggCn =
+    "lg:text-[1.1rem]! md:text-[1rem]! text-[0.8rem]! hover:underline! underline-offset-4 bg-transparent!";
+  return isTrigger ? (
     <NavigationMenuTrigger
       className={cn(
         path === pathName && "underline underline-offset-4",
-        "text-[1.1rem] hover:underline! underline-offset-4 bg-transparent!",
+        TriggCn,
         className
       )}
     >
@@ -159,25 +178,12 @@ function NavTrigger({
         <span>{textContent}</span>
       )}
     </NavigationMenuTrigger>
-  );
-}
-
-export function NavLink({
-  textContent,
-  pathName,
-  className,
-}: {
-  textContent: string;
-  pathName: string;
-  className?: string;
-}) {
-  const path = usePathname();
-  return (
+  ) : (
     <NavigationMenuLink
       asChild
       className={cn(
         path === pathName && "underline underline-offset-4",
-        "text-[1.1rem]! hover:underline! underline-offset-4 bg-transparent! hover:text-black! active:text-black! focus:text-black! focus-visible:text-black! focus-within:text-black! not-hover:text-black ",
+        TriggCn,
         navigationMenuTriggerStyle(),
         className
       )}

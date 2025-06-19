@@ -33,6 +33,8 @@ export default function RootLayout({
           {" "}
           <Nav />
           {children}
+        </main>
+        <main className="relative w-[100dvw]">
           <Footer />
         </main>
       </body>

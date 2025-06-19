@@ -4,65 +4,230 @@ import { InstaIcon } from "@/app/comp/socialIcon/insta-icon";
 import { FgIcon } from "@/app/comp/socialIcon/fg-icon";
 import { XIcon } from "@/app/comp/socialIcon/x-icon";
 import { MailIcon } from "lucide-react";
+import VDButton from "@/app/comp/nav/VDButton";
 
 export default function Footer() {
   return (
     <>
-      <div className="footer bg-footer w-full lg:px-[8rem] md:px-[4rem] py-[3.6rem] flex flex-row gap-[2rem] items-cente items-stretch justify-center text-white">
-        <div className="flex-1 h-full border-r-2 border-r-[rgba(255,255,255,0.3)] flex flex-col items-start justify-between gap-[2rem]">
-          <div className="flex flex-col items-start justify-start gap-[1.3rem]">
+      <div className="cta w-full  lg:px-[4rem] md:px-[2.5rem] px-[1.5rem] flex items-center justify-between pb-[2rem] pt-[5rem] ">
+        <h1 className="font-heading font-[600] lg:text-[2.8rem] md:text-[2rem] text-[1.5rem] flex-">
+          Lend a Hand, Share Your Heart.
+        </h1>
+        <VDButton />
+      </div>
+      <div className="footer bg-footer w-full lg:px-[4rem] md:px-[2.5rem] px-[1.5rem] md:py-[3.6rem] pt-[3.5rem] pb-[3rem] flex flex-col md:flex-row gap-[2rem] items-start md:items-stretch justify-start md:justify-center text-white">
+        <div className="  max-w-[32rem] flex-1 pb-[2rem] md:pb-[0rem] sm:border-r-0 border-b-2 border-b-[rgba(255,255,255,0.3)] md:border-b-0 md:border-r-2 md:border-r-[rgba(255,255,255,0.3)] flex flex-col items-start lg:justify-between md:justify-start gap-[2rem] pr-[2.2rem]">
+          <div className="flex flex-col items-start justify-start lg:gap-[1.3rem] md:gap-[0.9rem] ">
             <Image
               src={"/img/logo/wFullLogoNgo.png"}
               alt="footerLogoImage"
               width={3571}
               height={1131}
               sizes="auto"
-              className="w-[24rem] h-auto pr-[2rem]"
+              className="w-[24rem] h-auto "
             />
             <div className="">
-              <h1 className="text-white font-heading lg:text-[1.4rem] md:text-[1.1rem] pr-[1.5rem] max-w-[90% leading-[1.86rem]">
+              <h1 className="text-white font-heading lg:text-[1.2rem] md:text-[1.2rem]  leading-[1.86rem] ">
                 Vrinda Welfare Society is a registered non{"\u2011"}profit based
                 in Punjab, dedicated to uplifting rural and underserved
                 communities across the state.
               </h1>
             </div>
           </div>
-          <div className="social w-full flex flex-row items-center justify-start gap-[0.65rem] pr-[2rem]">
-            <Link href={"https://instagram.com/vrindawelfare"}>
-              <div className="insta h-[3.8rem] w-[3.8rem] p-[0.88rem] items-center justify-center rounded-full border-1 border-white fill-white hover:fill-black  hover:bg-white">
-                <InstaIcon />
-              </div>
-            </Link>
-            <Link href={"https://facebook.com/vrindawelfare"}>
-              <div className="fg h-[3.8rem] w-[3.8rem] p-[0.6rem] pr-[0.78rem] items-center justify-center rounded-full border-1 border-white fill-white hover:fill-black  hover:bg-white">
-                <FgIcon />
-              </div>
-            </Link>
-            <Link href={"https://x.com/vrindawelfare"}>
-              <div className="x h-[3.8rem] w-[3.8rem] p-[0.98rem] items-center justify-center rounded-full border-1 border-white fill-white hover:fill-black  hover:bg-white">
-                <XIcon />
-              </div>
-            </Link>
+          <div className="flex flex-col gap-[1.2rem]">
+            <div className="social w-full flex flex-row items-center justify-start gap-[0.65rem] ">
+              <Link href={"https://instagram.com/vrindawelfare"}>
+                <div className="insta h-[3.8rem] w-[3.8rem] p-[0.88rem] items-center justify-center rounded-full border-1 border-white fill-white hover:fill-black  hover:bg-white">
+                  <InstaIcon />
+                </div>
+              </Link>
+              <Link href={"https://facebook.com/vrindawelfare"}>
+                <div className="fg h-[3.8rem] w-[3.8rem] p-[0.6rem] pr-[0.78rem] items-center justify-center rounded-full border-1 border-white fill-white hover:fill-black  hover:bg-white">
+                  <FgIcon />
+                </div>
+              </Link>
+              <Link href={"https://x.com/vrindawelfare"}>
+                <div className="x h-[3.8rem] w-[3.8rem] p-[0.98rem] items-center justify-center rounded-full border-1 border-white fill-white hover:fill-black  hover:bg-white">
+                  <XIcon />
+                </div>
+              </Link>
+            </div>
+            <div className="contact w-full flex items-center md:justify-start justify-start">
+              <Link
+                href={"mailto:vrindawelfare@gmail.com"}
+                className="email flex flex-row justify-center items-center gap-[0.6rem] font-heading text-[1.2rem]"
+              >
+                <MailIcon className="h-[1.6rem] w-auto" />
+                <h1> vrindawelfare@gmail.com</h1>
+              </Link>
+            </div>
           </div>
         </div>
 
-        <div className="flex-1  flex flex-col justify-between ">
+        <div className="flex-1  flex flex-col items-start md:justify-center justify-start gap-[2rem] ">
           <div className="quickLinks">
             <h2 className="font-heading font-[600] text-[1.5rem]">
               Quick Links
             </h2>
-
-            <div className="flex flex-col items-start justify-start gap-[0.5rem] mt-[1rem] text-[1.1rem]">
-              <Link href={"/about"}>About</Link>
-              <Link href={"/events"}>Events</Link>
-              <Link href={"/about-team"}>Team</Link>
-              <Link href={"/gallerly"}>Gallerly</Link>
-              <Link href={"/donate"}>Donate</Link>
+            <div className="lg:flex lg:flex-row grid grid-cols-2 flex-co gap-[2rem] items-start justify-start lg:text-[0.9rem] md:text-[0.8rem] text-[0.8rem]">
+              <div className="flex flex-col items-start justify-start gap-[0.5rem] mt-[1rem] ">
+                <h1
+                  //   href={"/about"}
+                  className="hover:underline underline-offset-[3px] text-[1.2rem] font-[600] font-heading"
+                >
+                  Vrinda Welare Society
+                </h1>
+                <Link
+                  href={"/About U"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  About Us
+                </Link>
+                <Link
+                  href={"/about-team"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Our Beliefs
+                </Link>
+                <Link
+                  href={"/gallery"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Our Impact
+                </Link>
+                <Link
+                  href={"/donate"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Privacy Policy
+                </Link>
+              </div>
+              <div className="flex flex-col items-start justify-start gap-[0.5rem] mt-[1rem]">
+                <h1
+                  //   href={"/about"}
+                  className="hover:underline underline-offset-[3px] text-[1.2rem] font-heading font-[600]"
+                >
+                  Our Work
+                </h1>
+                <Link
+                  href={"/events"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Education
+                </Link>
+                <Link
+                  href={"/about-team"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Rural Empowrement
+                </Link>
+                <Link
+                  href={"/gallery"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Health
+                </Link>
+                <Link
+                  href={"/donate"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Sports
+                </Link>
+                <Link
+                  href={"/donate"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Startups
+                </Link>
+              </div>
+              {/* </div> */}
+              {/* <div className="flex gap-[2rem] items-start justify-start "> */}
+              <div className="flex flex-col items-start justify-start gap-[0.5rem] mt-[1rem]">
+                <h1
+                  //   href={"/about"}
+                  className="hover:underline underline-offset-[3px] text-[1.2rem] font-heading font-[600]"
+                >
+                  Get Involved
+                </h1>
+                <Link
+                  href={"/events"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Individual Support
+                </Link>
+                <Link
+                  href={"/about-team"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Coorporates Partnership
+                </Link>
+                <Link
+                  href={"/gallery"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Institutes/School
+                </Link>
+                <Link
+                  href={"/donate"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Career
+                </Link>
+                <Link
+                  href={"/donate"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Procedure
+                </Link>
+                <Link
+                  href={"/donate"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Rules
+                </Link>
+              </div>
+              <div className="flex flex-col items-start justify-start gap-[0.5rem] mt-[1rem]">
+                <h1
+                  //   href={"/about"}
+                  className="hover:underline underline-offset-[3px] text-[1.2rem] font-heading font-[600]"
+                >
+                  Resources
+                </h1>
+                <Link
+                  href={"/events"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Current Events
+                </Link>
+                <Link
+                  href={"/events"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Past Events
+                </Link>
+                <Link
+                  href={"/about-team"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Blog
+                </Link>
+                <Link
+                  href={"/gallery"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Newsletter
+                </Link>
+                <Link
+                  href={"/donate"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Blog
+                </Link>
+              </div>
+              {/* </div> */}
             </div>
           </div>
-          <div className="contact w-full flex items-center justify-center">
-            {/* <h2>Contact</h2> */}
-            {/* <Image src={}/> */}
+          {/* <div className="contact w-full flex items-center md:justify-start justify-start">
             <Link
               href={"mailto:vrindawelfare@gmail.com"}
               className="email flex flex-row justify-center items-center gap-[0.6rem] font-heading text-[1.4rem]"
@@ -70,13 +235,11 @@ export default function Footer() {
               <MailIcon className="h-8 w-auto" />
               <h1> vrindawelfare@gmail.com</h1>
             </Link>
-
-            {/* </div> */}
-          </div>
+          </div> */}
         </div>
       </div>
 
-      <div className="bg-footerSecondary lg:px-[8rem] md:px-[5rem] py-[2rem] flex flex-row justify-between text-white">
+      <div className="bg-footerSecondary w-full lg:px-[4rem] md:px-[2.5rem] px-[1.5rem]  py-[2rem] flex flex-row justify-between text-white text-[0.7rem] md:text-[1rem]">
         <h1>© 2025 Vrinda Welfare. All Rights Reserved</h1>
         <Link href={"/privacy-policy"}>
           {" "}
