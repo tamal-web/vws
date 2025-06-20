@@ -54,11 +54,11 @@ export default function Footer() {
             </div>
             <div className="contact w-full flex items-center md:justify-start justify-start">
               <Link
-                href={"mailto:vrindawelfare@gmail.com"}
+                href={"mailto:support@vrindawelfare.com"}
                 className="email flex flex-row justify-center items-center gap-[0.6rem] font-heading text-[1.2rem]"
               >
                 <MailIcon className="h-[1.6rem] w-auto" />
-                <h1> vrindawelfare@gmail.com</h1>
+                <h1> support@vrindawelfare.com</h1>
               </Link>
             </div>
           </div>
