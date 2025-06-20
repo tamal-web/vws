@@ -55,7 +55,7 @@ const components: { title: string; href: string; description: string }[] = [
 ];
 
 export function NavigationMenuDemo() {
-  const pathName = usePathname();
+  // const pathName = usePathname();
   return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -73,7 +73,7 @@ export function NavigationMenuDemo() {
             <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
-                  <a
+                  <Link
                     className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none focus:shadow-md"
                     href="/"
                   >
@@ -83,7 +83,7 @@ export function NavigationMenuDemo() {
                     <p className="text-muted-foreground text-sm leading-tight">
                       Beautifully designed components built with Tailwind CSS.
                     </p>
-                  </a>
+                  </Link>
                 </NavigationMenuLink>
               </li>
               <ListItem href="/docs" title="Introduction">
