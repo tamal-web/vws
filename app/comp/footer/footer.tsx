@@ -16,7 +16,7 @@ export default function Footer() {
         <VDButton />
       </div>
       <div className="footer bg-footer w-full lg:px-[4rem] md:px-[2.5rem] px-[1.5rem] md:py-[3.6rem] pt-[3.5rem] pb-[3rem] flex flex-col md:flex-row gap-[2rem] items-start md:items-stretch justify-start md:justify-center text-white">
-        <div className="  max-w-[32rem] flex-1 pb-[2rem] md:pb-[0rem] sm:border-r-0 border-b-2 border-b-[rgba(255,255,255,0.3)] md:border-b-0 md:border-r-2 md:border-r-[rgba(255,255,255,0.3)] flex flex-col items-start lg:justify-between md:justify-start gap-[2rem] pr-[2.2rem]">
+        <div className=" shrink-5! fle max-w-[32rem]  pb-[2rem] md:pb-[0rem] sm:border-r-0 border-b-2 border-b-[rgba(255,255,255,0.3)] md:border-b-0 md:border-r-2 md:border-r-[rgba(255,255,255,0.3)] flex flex-col items-start lg:justify-between md:justify-start gap-[2rem] pr-[2.2rem]">
           <div className="flex flex-col items-start justify-start lg:gap-[1.3rem] md:gap-[0.9rem] ">
             <Image
               src={"/img/logo/wFullLogoNgo.png"}
@@ -64,7 +64,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex-1  flex flex-col items-start md:justify-center justify-start gap-[2rem] ">
+        <div className="grow-5  flex flex-col items-start md:justify-center justify-start gap-[2rem] ">
           <div className="quickLinks">
             <h2 className="font-heading font-[600] text-[1.5rem]">
               Quick Links
@@ -73,30 +73,48 @@ export default function Footer() {
               <div className="flex flex-col items-start justify-start gap-[0.5rem] mt-[1rem] ">
                 <h1
                   //   href={"/about"}
-                  className="hover:underline underline-offset-[3px] text-[1.2rem] font-[600] font-heading"
+                  className="text-[1.2rem] font-[600] font-heading"
                 >
                   Vrinda Welare Society
                 </h1>
                 <Link
-                  href={"/About U"}
+                  href={"/about"}
                   className="hover:underline underline-offset-[3px]"
                 >
                   About Us
                 </Link>
                 <Link
-                  href={"/about-team"}
+                  href={"/about/mission"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Our Mission
+                </Link>
+                <Link
+                  href={"/about/belief"}
                   className="hover:underline underline-offset-[3px]"
                 >
                   Our Beliefs
                 </Link>
                 <Link
-                  href={"/gallery"}
+                  href={"/about/impact"}
                   className="hover:underline underline-offset-[3px]"
                 >
                   Our Impact
                 </Link>
                 <Link
-                  href={"/donate"}
+                  href={"/about/team"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Our Core Team
+                </Link>
+                <Link
+                  href={"/about/plan"}
+                  className="hover:underline underline-offset-[3px]"
+                >
+                  Our Future Plans
+                </Link>
+                <Link
+                  href={"/privacy-policy"}
                   className="hover:underline underline-offset-[3px]"
                 >
                   Privacy Policy
@@ -105,36 +123,36 @@ export default function Footer() {
               <div className="flex flex-col items-start justify-start gap-[0.5rem] mt-[1rem]">
                 <h1
                   //   href={"/about"}
-                  className="hover:underline underline-offset-[3px] text-[1.2rem] font-heading font-[600]"
+                  className="text-[1.2rem] font-heading font-[600]"
                 >
                   Our Work
                 </h1>
                 <Link
-                  href={"/events"}
+                  href={"/about/work/"}
                   className="hover:underline underline-offset-[3px]"
                 >
                   Education
                 </Link>
                 <Link
-                  href={"/about-team"}
+                  href={"/about/work/"}
                   className="hover:underline underline-offset-[3px]"
                 >
                   Rural Empowerment
                 </Link>
                 <Link
-                  href={"/gallery"}
+                  href={"/about/work/"}
                   className="hover:underline underline-offset-[3px]"
                 >
                   Health
                 </Link>
                 <Link
-                  href={"/donate"}
+                  href={"/about/work/"}
                   className="hover:underline underline-offset-[3px]"
                 >
                   Sports
                 </Link>
                 <Link
-                  href={"/donate"}
+                  href={"/about/work/"}
                   className="hover:underline underline-offset-[3px]"
                 >
                   Startups
@@ -145,42 +163,42 @@ export default function Footer() {
               <div className="flex flex-col items-start justify-start gap-[0.5rem] mt-[1rem]">
                 <h1
                   //   href={"/about"}
-                  className="hover:underline underline-offset-[3px] text-[1.2rem] font-heading font-[600]"
+                  className=" text-[1.2rem] font-heading font-[600]"
                 >
                   Get Involved
                 </h1>
                 <Link
-                  href={"/events"}
+                  href={"/get-involved/"}
                   className="hover:underline underline-offset-[3px]"
                 >
                   Individual
                 </Link>
                 <Link
-                  href={"/about-team"}
+                  href={"/get-involved/"}
                   className="hover:underline underline-offset-[3px]"
                 >
                   Corporates
                 </Link>
                 <Link
-                  href={"/gallery"}
+                  href={"/get-involved/"}
                   className="hover:underline underline-offset-[3px]"
                 >
                   Institutes/School
                 </Link>
                 <Link
-                  href={"/donate"}
+                  href={"/get-involved/"}
                   className="hover:underline underline-offset-[3px]"
                 >
                   Career
                 </Link>
                 <Link
-                  href={"/donate"}
+                  href={"/get-involved/"}
                   className="hover:underline underline-offset-[3px]"
                 >
                   Procedure
                 </Link>
                 <Link
-                  href={"/donate"}
+                  href={"/get-involved/"}
                   className="hover:underline underline-offset-[3px]"
                 >
                   Rules
@@ -189,39 +207,33 @@ export default function Footer() {
               <div className="flex flex-col items-start justify-start gap-[0.5rem] mt-[1rem]">
                 <h1
                   //   href={"/about"}
-                  className="hover:underline underline-offset-[3px] text-[1.2rem] font-heading font-[600]"
+                  className=" text-[1.2rem] font-heading font-[600]"
                 >
                   Resources
                 </h1>
                 <Link
-                  href={"/events"}
+                  href={"/event"}
                   className="hover:underline underline-offset-[3px]"
                 >
                   Current Events
                 </Link>
                 <Link
-                  href={"/events"}
+                  href={"/event"}
                   className="hover:underline underline-offset-[3px]"
                 >
                   Past Events
                 </Link>
                 <Link
-                  href={"/about-team"}
+                  href={"/blog"}
                   className="hover:underline underline-offset-[3px]"
                 >
                   Blog
                 </Link>
                 <Link
-                  href={"/gallery"}
+                  href={"/newsletter"}
                   className="hover:underline underline-offset-[3px]"
                 >
                   Newsletter
-                </Link>
-                <Link
-                  href={"/donate"}
-                  className="hover:underline underline-offset-[3px]"
-                >
-                  Blog
                 </Link>
               </div>
               {/* </div> */}

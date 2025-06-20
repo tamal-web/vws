@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Nav from "./comp/nav/nav";
+import { SidebarProvider } from "@/components/ui/sidebar";
+import { AppSidebar } from "./comp/nav/app-sidebar";
+
 import Footer from "@/app/comp/footer/footer";
 import "./globals.css";
 
@@ -29,14 +32,20 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <main className="relative w-[100dvw]">
-          {" "}
-          <Nav />
-          {children}
-        </main>
-        <main className="relative w-[100dvw]">
-          <Footer />
-        </main>
+        <SidebarProvider defaultOpen={false}>
+          <AppSidebar />
+          <main className="relative w-[100dvw]">
+            {" "}
+            <div>
+              <Nav />
+              {children}
+            </div>
+            <Footer />
+          </main>
+          {/* <main className="relative w-[100dvw]"> */}
+
+          {/* </main> */}
+        </SidebarProvider>
       </body>
     </html>
   );

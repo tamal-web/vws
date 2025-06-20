@@ -1,9 +1,10 @@
 import Image from "next/image";
+import HeroSection from "./comp/section/hero-section";
 
 export default function Home() {
   return (
     <div className="w-screen">
-      <div className="hero w-full flex flex-col items-center">
+      {/* <div className="hero w-full flex flex-col items-center">
         <div className="relative">
           <Image
             src={"/img/logo/NgoLogoBlue.png"}
@@ -38,6 +39,7 @@ export default function Home() {
               alt="LeftPics"
               width={2613}
               height={1743}
+              sizes="auto"
               className="w-[20rem] h-auto relative object-cover rounded-[1.7rem] border-[2px] border-white transform rotate-[-8deg]"
             />
           </div>
@@ -69,6 +71,7 @@ export default function Home() {
               alt="RightPic"
               width={2613}
               height={1742}
+              sizes="auto"
               className="w-[20rem] h-auto relative object-cover rounded-[1.7rem] border-[2px] border-white transform rotate-[9deg]"
             />
             <div className="w-full flex flex-row items-end justify-center lg:gap-[0.6rem] md:gap-[0.4rem]">
@@ -86,7 +89,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <HeroSection />
       <div className=" about border-brown border-1 items-center flex flex-col mt-[5rem]  pt-[2.8rem] pb-[2.4rem] px-[2.5rem] rounded-[2rem] mx-[2.5rem] gap-0">
         <span className="badge px-3 py-2 rounded-full border-1 border-brown mb-[1.5rem]">
           About Us

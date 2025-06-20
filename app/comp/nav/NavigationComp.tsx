@@ -15,40 +15,41 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { ExternalLink } from "lucide-react";
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
+    title: "Our Mission",
+    href: "/about/mission",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
+    title: "Our Beliefs",
+    href: "/about/belief",
     description:
       "For sighted users to preview content available behind a link.",
   },
   {
-    title: "Progress",
-    href: "/docs/primitives/progress",
+    title: "Our Impact",
+    href: "/about/impact",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
   {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
+    title: "Our Core Team",
+    href: "/about/team",
     description: "Visually or semantically separates content.",
   },
   {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
+    title: "Our Future Plans",
+    href: "/about/plan",
     description:
       "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
   },
   {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
+    title: "FAQs",
+    href: "/about/faq",
     description:
       "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
   },
@@ -66,31 +67,29 @@ export function NavigationMenuDemo() {
             isTrigger={true}
           />
           <NavigationMenuContent>
-            <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+            <ul className="grid gap-[0.3rem] md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <Link
-                    className="to-[#6985b6] from-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none focus:shadow-md text-white!"
-                    href="/"
+                    className="to-[#6985b6] from-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b   no-underline outline-hidden select-none focus:shadow-md text-white!"
+                    href="/about/work"
                   >
-                    <div className="mt-4 mb-2 text-lg font-medium">
-                      shadcn/ui
+                    <div className="mt-[] mb-[] font-heading lg:text-[1.5rem] md:text-[1.2rem] font-[600] leading-none pb-[0.34rem] pl-[0.3romrem]">
+                      Our Work
                     </div>
-                    <p className="text-brand text-sm leading-tight">
+                    {/* <p className="text-brand text-sm leading-tight">
                       Beautifully designed components built with Tailwind CSS.
-                    </p>
+                    </p> */}
                   </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
-              </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
-              </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
-              </ListItem>
+
+              <ListItem href="/events" title="Events"></ListItem>
+              <ListItem href="/get-involved" title="Get Involved"></ListItem>
+              <ListItem
+                href="/get-involved/help"
+                title="How can You Help"
+              ></ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
@@ -102,7 +101,7 @@ export function NavigationMenuDemo() {
             isTrigger={true}
           />
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+            <ul className="grid w-[400px] gap-[0.3rem] md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               {components.map((component) => (
                 <ListItem
                   key={component.title}
@@ -137,11 +136,18 @@ function ListItem({
   return (
     <li {...props}>
       <NavigationMenuLink asChild>
-        <Link href={href}>
-          <div className="text-sm leading-none font-medium">{title}</div>
-          <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
+        <Link
+          href={href}
+          className="flex flex-row justify-between items-center group"
+        >
+          <div className="text-[1.2rem] font-heading leading-none font-medium">
+            {title}
+          </div>
+          <ExternalLink className="h-5! w-5! opacity-0 group-hover:opacity-100 transition-opacity duration-100 text-brand" />
+
+          {/* <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
             {children}
-          </p>
+          </p> */}
         </Link>
       </NavigationMenuLink>
     </li>
