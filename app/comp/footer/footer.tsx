@@ -11,7 +11,7 @@ export default function Footer() {
     <>
       <div className="cta w-full  lg:px-[4rem] md:px-[2.5rem] px-[1.5rem] flex flex-col gap-[1rem] md:flex-row items-center justify-between pb-[2rem] pt-[5rem] ">
         <h1 className="text-center font-heading font-[600] lg:text-[2.8rem] md:text-[2rem] text-[2.1rem] leading-[2.2rem] md:leading-none ">
-          Lend a Hand, <br /> Share Your Heart.
+          Lend a Hand, <br className="md:hidden" /> Share Your Heart.
         </h1>
         <VDButton />
       </div>
