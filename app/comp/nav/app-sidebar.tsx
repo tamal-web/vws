@@ -71,7 +71,7 @@ const items = [
     subItems: [
       {
         title: "Our Work",
-        url: "about/work",
+        url: "/about/work",
       },
       {
         title: "Events",
