@@ -99,14 +99,16 @@ export function AppSidebar() {
   return (
     <Sidebar>
       <SidebarHeader>
-        <Image
-          src={"/img/logo/FullLogoNgo.png"}
-          alt="Logo"
-          width={3571}
-          height={1131}
-          sizes="auto"
-          className="md:w-[13rem] w-[12.5rem] h-auto relative mt-[2rem]"
-        />
+        <Link href={"/"}>
+          <Image
+            src={"/img/logo/FullLogoNgo.png"}
+            alt="Logo"
+            width={3571}
+            height={1131}
+            sizes="auto"
+            className="md:w-[13rem] w-[12.5rem] h-auto relative mt-[2rem]"
+          />
+        </Link>
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
@@ -155,7 +157,7 @@ export function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
       <SidebarFooter>
-        <div className="w-full flex justify-center items-center">
+        <div className="w-full flex justify-center items-center pb-[2rem]">
           {" "}
           <VDButton />
         </div>
