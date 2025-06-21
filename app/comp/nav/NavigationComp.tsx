@@ -14,7 +14,6 @@ import {
 } from "@/components/ui/navigation-menu";
 import { ExternalLink } from "lucide-react";
 import { Navitems } from "./nav-sidebar-contets";
-import path from "path";
 
 export function NavigationMenuDemo() {
   return (
