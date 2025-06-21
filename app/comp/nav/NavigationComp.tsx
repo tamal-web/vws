@@ -37,7 +37,7 @@ export function NavigationMenuDemo() {
                           className="to-[#6985b6] from-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b   no-underline outline-hidden select-none focus:shadow-md text-white!"
                           href="/about/work"
                         >
-                          <div className="mt-[] mb-[] font-(family-name:--font-abhya) lg:text-[1.5rem] md:text-[1.4rem] font-semibold leading-none pb-[0.34rem] pl-[0.3romrem]">
+                          <div className="mt-[] mb-[] font-(family-name:--font-abhya) lg:text-[1.5rem] md:text-[1.4rem] font-semibold leading-none pt-[0.45rem] pb-[0.34rem] pl-[0.3romrem]">
                             Our Work
                           </div>
                         </Link>

@@ -1,5 +1,5 @@
 "use client";
-import { BrandButton } from "@/app/comp/brand-button";
+import { BrandButton } from "@/app/comp/brand-comp/brand-button";
 import { useRouter } from "next/navigation";
 
 export default function VDButton() {
