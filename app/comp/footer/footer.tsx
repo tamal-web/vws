@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <>
       <div className="cta w-full  lg:px-[4rem] md:px-[2.5rem] px-[1.5rem] flex flex-col gap-[1rem] md:flex-row items-center justify-between pb-[2rem] pt-[5rem] ">
-        <h1 className="text-center font-(family-name:--font-abhya) font-semibold lg:text-[2.8rem] md:text-[2rem] text-[2.1rem] leading-[2.2rem] md:leading-none ">
+        <h1 className="text-center font-(family-name:--font-abhya) font-[800] lg:text-[2.9rem] md:text-[2rem] text-[2.1rem] leading-[2.2rem] md:leading-none ">
           Lend a Hand, <br className="md:hidden" /> Share Your Heart.
         </h1>
         <VDButton />
@@ -242,9 +242,9 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="bg-footerSecondary w-full lg:px-[4rem] md:px-[2.5rem] px-[1.5rem]  py-[2rem] flex flex-row justify-between text-white text-[0.7rem] md:text-[1rem]">
+      <div className="bg-footerSecondary w-full lg:px-[4rem] md:px-[2.5rem] px-[1.5rem]  py-[2rem] flex flex-row justify-between text-white text-[0.8rem] md:text-[1rem]">
         <h1>© 2025 Vrinda Welfare. All Rights Reserved</h1>
-        <Link href={"/privacy-policy"}>
+        <Link href={"/privacy-policy"} className="hidden md:inline">
           {" "}
           <h1>Privacy Policy</h1>
         </Link>
