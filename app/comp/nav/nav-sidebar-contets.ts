@@ -11,7 +11,7 @@ export const Navitems: NavItem[] = [
     subItems: [
       {
         title: "Events",
-        href: "/events",
+        href: "/event",
         description: "",
       },
       {

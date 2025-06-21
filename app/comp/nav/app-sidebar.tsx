@@ -1,3 +1,4 @@
+"use client";
 import { ChevronDownIcon } from "lucide-react";
 import Image from "next/image";
 import {
@@ -22,8 +23,10 @@ import {
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Navitems } from "./nav-sidebar-contets";
+import { usePathname } from "next/navigation";
 
 export function AppSidebar() {
+  const pathName = usePathname();
   return (
     <Sidebar>
       <SidebarHeader>
@@ -34,7 +37,7 @@ export function AppSidebar() {
             width={3571}
             height={1131}
             sizes="auto"
-            className="md:w-[13rem] w-[12.5rem] h-auto relative mt-[2rem]"
+            className="md:w-[13rem] w-[12.5rem] h-auto relative mt-[2rem] ml-[0.6rem]"
           />
         </Link>
       </SidebarHeader>
@@ -55,6 +58,7 @@ export function AppSidebar() {
                           item.subItems.length === 0 && "flex flex-row",
                           "flex flex-row justify-between items-center"
                         )}
+                        isActive={item.href === pathName}
                       >
                         <Link
                           className={cn(item.subItems.length === 0 && "flex-1")}
@@ -69,7 +73,13 @@ export function AppSidebar() {
                       {item.subItems.length !== 0 && (
                         <SidebarMenuSub>
                           {item.subItems.map((subItem) => (
-                            <SidebarMenuSubItem key={subItem.title}>
+                            <SidebarMenuSubItem
+                              key={subItem.title}
+                              className={cn(
+                                subItem.href === pathName &&
+                                  "underline underline-offset-2 decoration-black"
+                              )}
+                            >
                               <Link href={subItem.href}>{subItem.title}</Link>
                             </SidebarMenuSubItem>
                           ))}

@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { ExternalLink } from "lucide-react";
 import { Navitems } from "./nav-sidebar-contets";
+import path from "path";
 
 export function NavigationMenuDemo() {
   return (
@@ -81,12 +82,13 @@ function ListItem({
   href,
   ...props
 }: React.ComponentPropsWithoutRef<"li"> & { href: string }) {
+  const path = usePathname();
   return (
     <li {...props}>
-      <NavigationMenuLink asChild>
+      <NavigationMenuLink asChild className={cn(path === href && "bg-accent")}>
         <Link
           href={href}
-          className="flex flex-row justify-between items-center group"
+          className="flex flex-row justify-between items-center group data-[active=true]:hidden"
         >
           <div className="text-[1.4rem] font-(family-name:--font-abhya) leading-none font-medium">
             {title}
@@ -111,13 +113,20 @@ function NavItem({
   isLink: boolean;
   isTrigger: boolean;
 }) {
-  const path = usePathname();
+  const CurrentPath = usePathname();
+  // const notHomePath = path !== "/";
   const TriggCn =
     "lg:text-[1.1rem]! md:text-[1rem]! text-[0.8rem]! hover:underline! underline-offset-4 bg-transparent!";
   return isTrigger ? (
     <NavigationMenuTrigger
       className={cn(
-        path === pathName && "underline underline-offset-4",
+        CurrentPath.startsWith(pathName) &&
+          pathName !== "/" &&
+          "underline underline-offset-4",
+        CurrentPath === "/" &&
+          CurrentPath === pathName &&
+          "underline underline-offset-4",
+
         TriggCn,
         className
       )}
@@ -132,7 +141,7 @@ function NavItem({
     <NavigationMenuLink
       asChild
       className={cn(
-        path === pathName && "underline underline-offset-4",
+        CurrentPath == pathName && "underline underline-offset-4",
         TriggCn,
         navigationMenuTriggerStyle(),
         className
