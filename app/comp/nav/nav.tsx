@@ -14,7 +14,6 @@ export default function Nav() {
 
       <div className="md:hidden flex w-full px-[1rem] py-[0.4rem] flex-row items-center justify-between sticky top-0 bg-bg! z-[9] border-b-brown border-b">
         <div className="flex flex-row items-center">
-          {/* <NavigationMenuDemo /> */}
           <SidebarTrigger />
         </div>
         <VDButton />

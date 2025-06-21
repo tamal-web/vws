@@ -17,7 +17,7 @@ export default function Footer() {
       </div>
       <div className="footer bg-footer w-full lg:px-[4rem] md:px-[2.5rem] px-[1.5rem] md:py-[3.6rem] pt-[3.5rem] pb-[3rem] flex flex-col md:flex-row gap-[2rem] items-start md:items-stretch justify-start md:justify-center text-white">
         <div className=" shrink-5! fle max-w-[32rem]  pb-[2rem] md:pb-[0rem] sm:border-r-0 border-b-2 border-b-[rgba(255,255,255,0.3)] md:border-b-0 md:border-r-2 md:border-r-[rgba(255,255,255,0.3)] flex flex-col items-start lg:justify-between md:justify-start gap-[2rem] pr-[2.2rem]">
-          <div className="flex flex-col items-start justify-start lg:gap-[1.3rem] md:gap-[0.9rem] ">
+          <div className="flex flex-col items-start justify-start lg:gap-[1.3rem] md:gap-[0.9rem] gap-[0.8rem]">
             <Image
               src={"/img/logo/wFullLogoNgo.png"}
               alt="footerLogoImage"

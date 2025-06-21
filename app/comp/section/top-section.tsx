@@ -51,7 +51,7 @@ export default function TopSection({ title }: { title: string }) {
         </div>
         <div className=" w-[37vw] md:w-[32vw] relative flex justify-center items-center h-auto">
           <div className="relative w-[37vw] md:w-[32vw] p-3 bg-brown rounded-[1.7rem]">
-            <div className="rounded-full  bg-[rgba(255,255,255,0.3)] transform backdrop-blur-[0.9rem] h-[3.8rem] w-[3.8rem] absolute z-[10] flex items-center justify-start top-[50%] left-[50%] transfrom translate-y-[-50%] translate-x-[-50%]">
+            <div className="rounded-full  bg-[rgba(255,255,255,0.3)] transform backdrop-blur-[0.9rem] h-[3.8rem] w-[3.8rem] absolute z-[8] flex items-center justify-start top-[50%] left-[50%] transfrom translate-y-[-50%] translate-x-[-50%]">
               <Image
                 src={"/img/vectoricon/vidplay.png"}
                 width={112}

@@ -5,17 +5,17 @@ export default function Home() {
   return (
     <div className="w-screen">
       <HeroSection />
-      <div className=" about border-brown border-1 items-center flex flex-col mt-[5rem] pt-[2.1rem] md:pt-[2.8rem] md:pb-[2.4rem] pb-[2rem] px-[1.1rem] md:px-[2.5rem] rounded-[1.5rem] md:rounded-[2rem] mx-[1rem] md:mx-[2.5rem] gap-0">
+      <div className=" about border-brown border-1 items-center flex flex-col mt-[5rem] pt-[2.1rem] md:pt-[2.8rem] md:pb-[2.4rem] pb-[2rem] px-[1.1rem] md:px-[2.5rem] rounded-[1.2rem] md:rounded-[2rem] mx-[1rem] md:mx-[2.5rem] gap-0">
         <span className="badge text-[0.86rem] md:text-[1rem] px-3 py-2 rounded-full border-1 border-brown md:mb-[1.5rem] mb-[1.1rem]">
           About Us
         </span>
         <div className="w-full flex flex-col">
-          <h1 className="font-(family-name:--font-abhya) lg:text-[2.8rem] md:text-[2.1rem] text-[1.1rem] font-bold max-w-[88%] md:leading-[2.76rem] lg:leading-[3.7rem] lg:mb-[3rem] md:mb-[1.8rem] mb-[0.9rem]">
+          <h1 className="font-(family-name:--font-abhya) lg:text-[2.8rem] md:text-[2.1rem] text-[1.25rem] font-bold max-w-[90%] md:max-w-[88%] md:leading-[2.76rem] lg:leading-[3.7rem] lg:mb-[3rem] md:mb-[1.8rem] mb-[0.9rem]">
             Vrinda Welfare Society is a registered non{"\u2011"}profit
             organisation, dedicated to uplift rural and underserved communities
             across the state.
           </h1>
-          <div className="images lg:h-[21rem] md:h-[16rem] flex flex-row justify-start items-center overflow-x-scroll gap-[1rem] md:gap-[1.6rem] no-scrollbar">
+          <div className="images lg:h-[21rem] md:h-[16rem] h-[12rem] flex flex-row justify-start items-center overflow-x-scroll gap-[1rem] md:gap-[1.6rem] no-scrollbar">
             <div className="relative group shadow-lg h-full shrink-0 overflow-hidden md:rounded-[1.7rem] rounded-[1.25rem]">
               <div className="absolute inset-0 bg-[rgba(0,0,0,0.25)] opacity-0 group-hover:opacity-100 transform backdrop-blur-[0.25rem] flex text-center items-center justify-center transition-opacity duration-150 text-white text-[1.2rem] md:text-[1.6rem] font-[600]">
                 Medical Camps
@@ -58,7 +58,7 @@ export default function Home() {
           </div>
           <div className=" md:items-start md:justify-center w-full flex flex-col items-center justify-start gap-[1.52rem] md:flex-row lg:px-[3rem] md:px-[1.8rem] mt-[2.8rem] lg:text-[1.4rem] md:text-[1.2rem] lg:gap-[4.4rem] md:gap-[2.4rem] box-border">
             <p className="font-(family-name:--font-abhya) flex-1">
-              <span className="font-semibold">What We Do?</span>
+              <span className="font-bold">What We Do?</span>
               <br /> We run educational and skill
               <span className="leading-[1rem]">
                 {"\u2011"}training programs, organize medical camps, encourage
@@ -67,7 +67,7 @@ export default function Home() {
               </span>
             </p>
             <p className="font-(family-name:--font-abhya) flex-1">
-              <span className="font-semibold">Why It Matters?</span>
+              <span className="font-bold">Why It Matters?</span>
               <br />
               <span className="leading-[1.9rem]">
                 By promoting education, skill development, health, and socio
