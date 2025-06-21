@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <>
       <div className="cta w-full  lg:px-[4rem] md:px-[2.5rem] px-[1.5rem] flex flex-col gap-[1rem] md:flex-row items-center justify-between pb-[2rem] pt-[5rem] ">
-        <h1 className="text-center font-heading font-[600] lg:text-[2.8rem] md:text-[2rem] text-[2.1rem] leading-[2.2rem] md:leading-none ">
+        <h1 className="text-center font-(family-name:--font-abhya) font-semibold lg:text-[2.8rem] md:text-[2rem] text-[2.1rem] leading-[2.2rem] md:leading-none ">
           Lend a Hand, <br className="md:hidden" /> Share Your Heart.
         </h1>
         <VDButton />
@@ -27,7 +27,7 @@ export default function Footer() {
               className="w-[24rem] h-auto "
             />
             <div className="">
-              <h1 className="text-white font-heading lg:text-[1.2rem] md:text-[1.2rem]  leading-[1.86rem] ">
+              <h1 className="text-white font-(family-name:--font-abhya) lg:text-[1.2rem] md:text-[1.2rem]  leading-[1.86rem] ">
                 Vrinda Welfare Society is a registered non{"\u2011"}profit based
                 in Punjab, dedicated to uplifting rural and underserved
                 communities across the state.
@@ -55,7 +55,7 @@ export default function Footer() {
             <div className="contact w-full flex items-center md:justify-start justify-start">
               <Link
                 href={"mailto:support@vrindawelfare.com"}
-                className="email flex flex-row justify-center items-center gap-[0.6rem] font-heading text-[1.2rem]"
+                className="email flex flex-row justify-center items-center gap-[0.6rem] font-(family-name:--font-abhya) text-[1.2rem]"
               >
                 <MailIcon className="h-[1.6rem] w-auto" />
                 <h1> support@vrindawelfare.com</h1>
@@ -66,14 +66,14 @@ export default function Footer() {
 
         <div className="grow-5  flex flex-col items-start md:justify-center justify-start gap-[2rem] ">
           <div className="quickLinks">
-            <h2 className="font-heading font-[600] text-[1.5rem]">
+            <h2 className="font-(family-name:--font-abhya) font-semibold text-[1.5rem]">
               Quick Links
             </h2>
             <div className="lg:flex lg:flex-row grid grid-cols-2 flex-co gap-[2rem] items-start justify-start lg:text-[0.9rem] md:text-[0.8rem] text-[0.8rem]">
               <div className="flex flex-col items-start justify-start gap-[0.5rem] mt-[1rem] ">
                 <h1
                   //   href={"/about"}
-                  className="text-[1.2rem] font-[600] font-heading"
+                  className="text-[1.2rem] font-semibold font-(family-name:--font-abhya)"
                 >
                   Vrinda Welare Society
                 </h1>
@@ -123,7 +123,7 @@ export default function Footer() {
               <div className="flex flex-col items-start justify-start gap-[0.5rem] mt-[1rem]">
                 <h1
                   //   href={"/about"}
-                  className="text-[1.2rem] font-heading font-[600]"
+                  className="text-[1.2rem] font-(family-name:--font-abhya) font-semibold"
                 >
                   Our Work
                 </h1>
@@ -163,7 +163,7 @@ export default function Footer() {
               <div className="flex flex-col items-start justify-start gap-[0.5rem] mt-[1rem]">
                 <h1
                   //   href={"/about"}
-                  className=" text-[1.2rem] font-heading font-[600]"
+                  className=" text-[1.2rem] font-(family-name:--font-abhya) font-semibold"
                 >
                   Get Involved
                 </h1>
@@ -207,7 +207,7 @@ export default function Footer() {
               <div className="flex flex-col items-start justify-start gap-[0.5rem] mt-[1rem]">
                 <h1
                   //   href={"/about"}
-                  className=" text-[1.2rem] font-heading font-[600]"
+                  className=" text-[1.2rem] font-(family-name:--font-abhya) font-semibold"
                 >
                   Resources
                 </h1>
@@ -239,15 +239,6 @@ export default function Footer() {
               {/* </div> */}
             </div>
           </div>
-          {/* <div className="contact w-full flex items-center md:justify-start justify-start">
-            <Link
-              href={"mailto:vrindawelfare@gmail.com"}
-              className="email flex flex-row justify-center items-center gap-[0.6rem] font-heading text-[1.4rem]"
-            >
-              <MailIcon className="h-8 w-auto" />
-              <h1> vrindawelfare@gmail.com</h1>
-            </Link>
-          </div> */}
         </div>
       </div>
 

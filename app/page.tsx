@@ -10,7 +10,7 @@ export default function Home() {
           About Us
         </span>
         <div className="w-full flex flex-col">
-          <h1 className="font-headingBold lg:text-[2.8rem] md:text-[2.1rem] text-[1.1rem] font-[600] max-w-[88%] md:leading-[2.76rem] lg:leading-[3.7rem] lg:mb-[3rem] md:mb-[1.8rem] mb-[0.9rem]">
+          <h1 className="font-(family-name:--font-abhya) lg:text-[2.8rem] md:text-[2.1rem] text-[1.1rem] font-bold max-w-[88%] md:leading-[2.76rem] lg:leading-[3.7rem] lg:mb-[3rem] md:mb-[1.8rem] mb-[0.9rem]">
             Vrinda Welfare Society is a registered non{"\u2011"}profit
             organisation, dedicated to uplift rural and underserved communities
             across the state.
@@ -57,7 +57,7 @@ export default function Home() {
             </div>
           </div>
           <div className=" md:items-start md:justify-center w-full flex flex-col items-center justify-start gap-[1.52rem] md:flex-row lg:px-[3rem] md:px-[1.8rem] mt-[2.8rem] lg:text-[1.4rem] md:text-[1.2rem] lg:gap-[4.4rem] md:gap-[2.4rem] box-border">
-            <p className="font-heading flex-1">
+            <p className="font-(family-name:--font-abhya) flex-1">
               <span className="font-semibold">What We Do?</span>
               <br /> We run educational and skill
               <span className="leading-[1rem]">
@@ -66,7 +66,7 @@ export default function Home() {
                 discrimination of caste, creed, or religion.
               </span>
             </p>
-            <p className="font-heading flex-1 ">
+            <p className="font-(family-name:--font-abhya) flex-1">
               <span className="font-semibold">Why It Matters?</span>
               <br />
               <span className="leading-[1.9rem]">

@@ -14,7 +14,7 @@ export default function HeroSection() {
           className="md:w-[8.125rem] w-[5.5rem] h-auto relative mt-[2.2rem]"
         />
       </div>
-      <h1 className="font-heading font-[600] text-[2.8rem] md:text-[4.6rem] text-brand  md:leading-[4.95rem] leading-[3rem] text-center mt-[1.1rem]">
+      <h1 className="font-(family-name:--font-abhya) font-bold text-[2.8rem] lg:text-[5.2rem] md:text-[4.7rem] text-brand lg:leading-[5rem]  md:leading-[4.8rem] leading-[3rem] text-center mt-[1.1rem]">
         Seeds of Learning, <br /> Fields of Hope
       </h1>
       <div className="hero-images w-full flex flex-row h-auto px-[2rem] gap-[1rem] mt-[1.45rem]">

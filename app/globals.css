@@ -84,8 +84,9 @@
   --sidebar-ring: transparent;
 }
 @theme {
-  --font-heading: "AbhyaLibre-Regular";
-  --font-headingBold: "AbhyaLibre-Bold";
+  /* --font-abhyaa: var(--font-abhya); */
+  /* --font-heading: ; */
+  /* --font-headingBold: "AbhyaLibre-Bold"; */
   --font-body: "Aboreto";
   --font-caption: "Acme";
   --color-brand: #003366;
@@ -139,14 +140,14 @@
   }
 }
 
-@font-face {
+/* @font-face {
   font-family: AbhyaLibre-Regular;
   src: url("/fonts/AbhyaLibre/AbhyaLibre-Regular.ttf");
 }
 @font-face {
   font-family: AbhayaLibre-Bold;
   src: url("/fonts/AbhayaLibre/AbhayaLibre-Bold.ttf");
-}
+} */
 @font-face {
   font-family: Aboreto;
   src: url("/fonts/Aboreto/Aboreto-Regular.ttf");

@@ -21,7 +21,7 @@ export default function TopSection({ title }: { title: string }) {
           className="md:w-[13rem] w-[12.5rem] h-auto relative mt-[2rem]"
         /> */}
       </div>
-      <h1 className="font-heading font-[500] text-[2.8rem] md:text-[4.6rem] text-brand md:leading-[5.7rem] leading-[3.1rem] text-center mt-[0rem]">
+      <h1 className="font-(family-name:--font-abhya) font-medium text-[2.8rem] md:text-[4.6rem] text-brand md:leading-[5.7rem] leading-[3.1rem] text-center mt-[0rem]">
         {title}
       </h1>
       <div className="hero-images w-full flex flex-row items-stretch justify-center h-auto px-[2rem] gap-[0.8rem] mt-[1.45rem]">
