@@ -10,7 +10,7 @@ export default function TopSection({ title }: { title: string }) {
           width={1413}
           height={1131}
           sizes="auto"
-          className="md:w-[6.8rem] w-[5.5rem] h-auto relative mt-[1rem]"
+          className="md:w-[6.8rem] w-[5.5rem] h-auto relative lg:mt-[0.4rem] md:mt-[1rem] mt-[2rem]"
         />
         {/* <Image
           src={"/img/logo/FullLogoNgo.png"}

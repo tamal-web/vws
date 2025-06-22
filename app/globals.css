@@ -183,10 +183,10 @@ body {
   --sidebar-ring: hsl(217.2 91.2% 59.8%);
 }
 
-.brand {
+/* .brand {
   color: #003366;
   border-color: #003366 !important;
-}
+} */
 
 .cutout:before {
   content: "";
@@ -196,7 +196,7 @@ body {
   width: 3rem;
   height: 3rem;
   background-color: transparent;
-  border-bottom-left-radius: 2rem;
+  border-bottom-left-radius: 1.85rem;
   box-shadow: -1rem 1rem #ffeac6;
 }
 
@@ -219,7 +219,7 @@ body {
   right: -3rem;
   width: 3rem;
   height: 2.8rem;
-  border-bottom-left-radius: 2.6rem;
+  border-bottom-left-radius: 1.8rem;
   box-shadow: -0.7rem 0.8rem #ffeac6;
 }
 .cutOut2 {
@@ -229,6 +229,42 @@ body {
   right: -3.11rem;
   width: 3rem;
   height: 2.5rem;
-  border-bottom-left-radius: 2rem;
+  border-bottom-left-radius: 1.8rem;
   box-shadow: -0.11rem 0.11rem #003366;
+}
+
+.activee {
+  display: hidden;
+}
+
+@utility brand-primary {
+  family-name: var(--font-abhya);
+  color: #ffeac6;
+  background-color: #003366;
+  border-color: #ffeac6;
+}
+
+@utility brand-secondary {
+  family-name: var(--font-abhya);
+  color: #003366;
+  background-color: #ffeac6;
+  border-color: #003366;
+}
+
+@layer components {
+  /* Default state - all cardboxes have brand-secondary */
+  .cardbox {
+    @apply brand-secondary transition-all duration-300;
+  }
+
+  /* When any cardbox is hovered, all non-hovered cardboxes get dimmed brand-secondary */
+  .cardbox-container:has(.cardbox:hover) .cardbox:not(:hover) {
+    @apply brand-secondary! opacity-100;
+  }
+
+  /* When a specific cardbox is hovered, it gets brand-primary */
+  .cardbox:hover .cardbox-apply,
+  .cardbox:hover.cardbox-apply {
+    @apply brand-primary opacity-100;
+  }
 }
