@@ -6,7 +6,7 @@ export default function AboutSection() {
         About Us
       </span>
       <div className="w-ful flex flex-col">
-        <h1 className="font-(family-name:--font-abhya) lg:text-[2.8rem] md:text-[2.1rem] text-[1.25rem] font-bold max-w-[90%] md:max-w-[88%] leading-[1.55rem] md:leading-[2.5rem] lg:leading-[3.3rem] lg:mb-[2.1rem] md:mb-[1.65rem] mb-[1.2rem]">
+        <h1 className="font-(family-name:--font-abhya) lg:text-[2.8rem] md:text-[2.1rem] text-[1.25rem] font-bold max-w-[90%] md:max-w-[88%] leading-[1.55rem] md:leading-[2.4rem] lg:leading-[3.1rem] lg:mb-[2.1rem] md:mb-[1.65rem] mb-[1.2rem]">
           Vrinda Welfare Society is a registered non{"\u2011"}profit
           organisation, dedicated to uplift rural and underserved communities
           across the state.
@@ -52,22 +52,22 @@ export default function AboutSection() {
             />
           </div>
         </div>
-        <div className="font-(family-name:--font-abhya)  md:justify-center w-ful flex flex-col items-center justify-start gap-[1.52rem] md:flex-row md:items-stretch lg:px-[3rem] md:px-[1.8rem] lg:mt-[2.5rem] md:mt-[2.3rem] mt-[1.8rem] lg:text-[1.4rem] md:text-[1.2rem] text-[1rem] lg:gap-[4.4rem] md:gap-[2.4rem] box-border">
-          <div className=" flex-1 w-ful flex flex-col lg:gap-[0.46rem] md:gap-[0.36rem] gap-[0.2rem]">
+        <div className="font-(family-name:--font-abhya)  md:justify-center w-ful flex flex-col items-center justify-start gap-[1.52rem] md:flex-row md:items-stretch lg:px-[3rem] md:px-[1.8rem] lg:mt-[2.3rem] md:mt-[2.1rem] mt-[1.8rem] lg:text-[1.4rem] md:text-[1.2rem] text-[1rem] lg:gap-[4.4rem] md:gap-[2.4rem] box-border">
+          <div className=" flex-1 w-ful flex flex-col lg:gap-[0.49rem] md:gap-[0.4rem] gap-[0.2rem]">
             <div className="self-start flex items-center justify-center font-extrabold leading-none! bg-brown text-white lg:text-[1.5rem] md:text-[1.4rem] border-brown px-3 py-2 rounded-full border">
               <h1>What We Do?</h1>
             </div>
-            <span className="lg:leading-[1.54rem] md:leading-[1.3rem] leading-[1rem]">
+            <span className="lg:leading-[1.58rem] md:leading-[1.34rem] leading-[1rem]">
               We run educational and skill{"\u2011"}training programs, organize
               medical camps, encourage sports and support youth and startups,
               serving without discrimination of caste, creed, or religion.
             </span>
           </div>
-          <div className="font-(family-name:--font-abhya) flex-1 flex flex-col w-ful gap-[0.2rem] lg:gap-[0.46rem] md:gap-[0.36rem]">
+          <div className="font-(family-name:--font-abhya) flex-1 flex flex-col w-ful gap-[0.2rem] lg:gap-[0.49rem] md:gap-[0.4rem]">
             <div className=" self-start flex items-center justify-center font-bold leading-none! bg-brown text-white lg:text-[1.5rem] md:text-[1.4rem] border-brown px-3 py-2 rounded-full border">
               <h1>Why It Matters?</h1>
             </div>
-            <span className="lg:leading-[1.54rem] md:leading-[1.3rem] leading-[1rem]">
+            <span className="lg:leading-[1.58rem] md:leading-[1.34rem] leading-[1rem]">
               By promoting education, skill development, health, and socio
               {"\u2011"}economic welfare, we empower Startups, Youth and people
               in rural areas to build brighter futures—together.
