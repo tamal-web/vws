@@ -252,32 +252,32 @@ function BoxSection() {
   );
 }
 
-function Box({
-  title,
-  path,
-  className,
-}: {
-  title: string;
-  path: string;
-  className: string | undefined;
-}) {
-  return (
-    <div
-      className={cn(
-        "border px-4 py-3 flex flex-col justify-between items-start aspect-square! rounded-[2rem]",
-        className
-      )}
-    >
-      <h1 className="font-(family-name:--font-abhya) text-[4rem] font-extrabold leading- mb-[1rem">
-        {title}
-      </h1>
-      <Link
-        href={path}
-        className="text-brand text-[1.5rem] font-body border border-brand rounded-[10rem] flex flex-row items-center justify-center font-semibold px-[1.4rem] py-[0.8rem] mt-[1.2rem] hover:bg-brand hover:text-white transition-all duration-200"
-      >
-        Know More
-        <MoveUpRight className="ml-[0.6rem]" />
-      </Link>
-    </div>
-  );
-}
+// function Box({
+//   title,
+//   path,
+//   className,
+// }: {
+//   title: string;
+//   path: string;
+//   className: string | undefined;
+// }) {
+//   return (
+//     <div
+//       className={cn(
+//         "border px-4 py-3 flex flex-col justify-between items-start aspect-square! rounded-[2rem]",
+//         className
+//       )}
+//     >
+//       <h1 className="font-(family-name:--font-abhya) text-[4rem] font-extrabold leading- mb-[1rem">
+//         {title}
+//       </h1>
+//       <Link
+//         href={path}
+//         className="text-brand text-[1.5rem] font-body border border-brand rounded-[10rem] flex flex-row items-center justify-center font-semibold px-[1.4rem] py-[0.8rem] mt-[1.2rem] hover:bg-brand hover:text-white transition-all duration-200"
+//       >
+//         Know More
+//         <MoveUpRight className="ml-[0.6rem]" />
+//       </Link>
+//     </div>
+//   );
+// }
