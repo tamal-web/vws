@@ -1,7 +1,7 @@
 import TopSection from "@/app/comp/section/top-section";
 import Link from "next/link";
 import { MoveUpRight } from "lucide-react";
-import { cn } from "@/lib/utils";
+// import { cn } from "@/lib/utils";
 export default function AboutPage() {
   return (
     <div className="w-screen">
