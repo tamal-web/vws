@@ -4,11 +4,11 @@ import { MoveUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 export default function AboutPage() {
   return (
-    <div className="w-screen">
+    <div className="w-full">
       <main
         className={cn(
-          "lg:px-[6.5rem md:px-[2.8rem px-[2rem",
-          "p-[clamp(1.8rem,6.4vw,6.8rem)] md:p-[clamp(1.8rem,6.2vw,6.8rem)] p-[1.8rem]"
+          "w-full lg:px-[6.5rem md:px-[2.8rem px-[2rem",
+          "px-[clamp(1.8rem,6.4vw,6.8rem)] md:px-[clamp(1.8rem,6.2vw,6.8rem)] px-[1.8rem]"
         )}
       >
         <TopSection title={"About Us"} />
