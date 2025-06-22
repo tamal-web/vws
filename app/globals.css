@@ -182,3 +182,53 @@ body {
   --sidebar-border: hsl(240 3.7% 15.9%);
   --sidebar-ring: hsl(217.2 91.2% 59.8%);
 }
+
+.brand {
+  color: #003366;
+  border-color: #003366 !important;
+}
+
+.cutout:before {
+  content: "";
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border-bottom-left-radius: 2rem;
+  box-shadow: -1rem 1rem #ffeac6;
+}
+
+.cutout:after {
+  content: "";
+  position: absolute;
+  top: -3.11rem;
+  left: 0.11rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border-bottom-left-radius: 1.6rem;
+  box-shadow: -0.09rem 0.09rem #003366;
+}
+
+.cutOut1 {
+  position: absolute;
+  background-color: transparent;
+  bottom: 0rem;
+  right: -3rem;
+  width: 3rem;
+  height: 2.8rem;
+  border-bottom-left-radius: 2.6rem;
+  box-shadow: -0.7rem 0.8rem #ffeac6;
+}
+.cutOut2 {
+  position: absolute;
+  background-color: transparent;
+  bottom: 0.12rem;
+  right: -3.11rem;
+  width: 3rem;
+  height: 2.5rem;
+  border-bottom-left-radius: 2rem;
+  box-shadow: -0.11rem 0.11rem #003366;
+}

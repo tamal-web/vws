@@ -10,7 +10,7 @@ export default function TopSection({ title }: { title: string }) {
           width={1413}
           height={1131}
           sizes="auto"
-          className="md:w-[7rem] w-[5.5rem] h-auto relative mt-[2rem]"
+          className="md:w-[6.8rem] w-[5.5rem] h-auto relative mt-[1rem]"
         />
         {/* <Image
           src={"/img/logo/FullLogoNgo.png"}
@@ -21,10 +21,10 @@ export default function TopSection({ title }: { title: string }) {
           className="md:w-[13rem] w-[12.5rem] h-auto relative mt-[2rem]"
         /> */}
       </div>
-      <h1 className="font-(family-name:--font-abhya) font-medium text-[2.8rem] md:text-[4.6rem] text-brand md:leading-[5.7rem] leading-[3.1rem] text-center mt-[0rem]">
+      <h1 className="font-(family-name:--font-abhya) font-medium text-[2.8rem] md:text-[4.4rem] text-brand md:leading-[5.7rem] leading-none! text-center mt-[0rem]">
         {title}
       </h1>
-      <div className="hero-images w-full flex flex-row items-stretch justify-center h-auto px-[2rem] gap-[0.8rem] mt-[1.45rem]">
+      <div className="hero-images w-full flex flex-row items-stretch justify-center h-auto px-[2rem] gap-[0.8rem] mt-[0.8rem]">
         <div className="hidden md:flex flex-col items-center justify-end ">
           <div className="w-full flex flex-row items-star lg:gap-[0.59rem] md:gap-[0.28rem] transform translate-y-[1rem]  pr-[0.7rem]">
             <Image
