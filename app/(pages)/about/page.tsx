@@ -1,4 +1,5 @@
 import TopSection from "@/app/comp/section/top-section";
+import TextBoxSection from "@/app/comp/section/textbox-section";
 import Link from "next/link";
 import { MoveUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -12,109 +13,15 @@ export default function AboutPage() {
         )}
       >
         <TopSection title={"About Us"} />
-        <TextSection />
+        <TextBoxSection title="About Us">{` Vrinda Welfare Society was founded to address gaps in healthcare,
+            education, and livelihood opportunities across rural Punjab. Our
+            registered office is at SCO No. ${"\u202f"} 4, Kalsia Square, VIP
+            Road, Zirakpur (140603). Since inception, we${"\u2019"}ve been
+            committed to serving society${"\u2019"}s most vulnerable—orphans,
+            disaster ${"\u2011"}affected families, persons with disabilities, and
+            the economically disadvantaged—without any discrimination`}</TextBoxSection>
         <BoxSection />
       </main>
-    </div>
-  );
-}
-
-function TextSection() {
-  return (
-    <div className="w-full pt-[3.4rem] font-(family-name:--font-abhya)">
-      <div className=" w-full flex flex-col items-start justify-start gap-[1rem] md:flex md:flex-col md:items-start md:justify-center md:gap-y-[2rem] mx-auto md:text-[1.4rem] md:leading-[1.78rem]">
-        <div className="about flex flex-col md:flex-row md:items-start md:justify-around  gap-[1rem]  border rounded-[2rem] py-[2.6rem] px-[1rem] md:px-0">
-          <div className="md:w-[26%] text-[3.4rem]  font-extrabold leading-[3.34rem]">
-            About Us{" "}
-          </div>
-          <div className="md:w-[60%]">
-            Vrinda Welfare Society was founded to address gaps in healthcare,
-            education, and livelihood opportunities across rural Punjab. Our
-            registered office is at SCO No.{"\u202f"} 4, Kalsia Square, VIP
-            Road, Zirakpur (140603). Since inception, we{"\u2019"}ve been
-            committed to serving society{"\u2019"}s most vulnerable—orphans,
-            disaster {"\u2011"}affected families, persons with disabilities, and
-            the economically disadvantaged—without any discrimination.
-          </div>
-        </div>
-        <div className="belief flex0 hidden flex-col md:flex-row md:items-strech md:justify-around  gap-[3rem] border rounded-[2rem] py-[2.7rem]">
-          <div className="text-[2.5rem] font-bold w-[26%] flex flex-col items-start justify-between">
-            <div>What We Believe </div>
-            <Link
-              href={"/about/belief"}
-              className="text-[1.5rem] font-body border rounded-[10rem] flex flex-row items-center justify-center font-semibold px-[1.4rem] py-[0.8rem] mt-[1.2rem] hover:bg-brown hover:text-white "
-            >
-              Know More
-              <MoveUpRight className="ml-[0.6rem]" />
-            </Link>
-          </div>
-          <div className="w-[60%]">
-            <ul className="list-disc space-y-[0.7rem]">
-              <li>
-                <span className="font-extrabold"> Universal Access: </span>
-                Every individual deserves quality education, healthcare, and
-                vocational training.
-              </li>
-              <li>
-                <span className="font-extrabold">
-                  {" "}
-                  Non{"\u2011"}Discrimination:{" "}
-                </span>
-                Progress flourishes when we uplift communities regardless of
-                caste, creed, religion, or economic status.
-              </li>
-              <li>
-                <span className="font-extrabold">Holistic Development: </span>
-                True well{"\u2011"}being spans moral, spiritual, physical, and
-                mental dimensions. Community
-              </li>
-              <li>
-                <span className="font-extrabold"> Empowerment: </span>
-                Informed, engaged citizens drive lasting change.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="mission hidden 0flex flex-col md:flex-row md:items-strech md:justify-around  gap-[3rem] border rounded-[2rem] py-[2.7rem]">
-          <div className="text-[2.5rem] font-bold w-[26%] flex flex-col items-start justify-between">
-            <div>Our Mission</div>
-            <Link
-              href={"/about/mission"}
-              className="text-[1.5rem] font-body border rounded-[10rem] flex flex-row items-center justify-center font-semibold px-[1.4rem] py-[0.8rem] mt-[1.2rem] hover:bg-brown hover:text-white "
-            >
-              Know More
-              <MoveUpRight className="ml-[0.6rem]" />
-            </Link>
-          </div>
-          <div className="w-[60%]">
-            <ul className="list-disc space-y-[0.7rem]">
-              <li>
-                <span className="font-extrabold"> Universal Access: </span>
-                Every individual deserves quality education, healthcare, and
-                vocational training.
-              </li>
-              <li>
-                <span className="font-extrabold">
-                  {" "}
-                  Non{"\u2011"}Discrimination:{" "}
-                </span>
-                Progress flourishes when we uplift communities regardless of
-                caste, creed, religion, or economic status.
-              </li>
-              <li>
-                <span className="font-extrabold">Holistic Development: </span>
-                True well{"\u2011"}being spans moral, spiritual, physical, and
-                mental dimensions. Community
-              </li>
-              <li>
-                <span className="font-extrabold"> Empowerment: </span>
-                Informed, engaged citizens drive lasting change.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }

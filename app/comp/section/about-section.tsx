@@ -53,21 +53,21 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="font-(family-name:--font-abhya)  md:justify-center w-ful flex flex-col items-center justify-start gap-[1.52rem] md:flex-row md:items-stretch lg:px-[3rem] md:px-[1.8rem] lg:mt-[2.3rem] md:mt-[2.1rem] mt-[1.8rem] lg:text-[1.4rem] md:text-[1.2rem] text-[1rem] lg:gap-[4.4rem] md:gap-[2.4rem] box-border">
-          <div className=" flex-1 w-ful flex flex-col lg:gap-[0.49rem] md:gap-[0.4rem] gap-[0.2rem]">
+          <div className=" flex-1 w-ful flex flex-col lg:gap-[0.51rem] md:gap-[0.48rem] gap-[0.2rem]">
             <div className="self-start flex items-center justify-center font-extrabold leading-none! bg-brown text-white lg:text-[1.5rem] md:text-[1.4rem] border-brown px-3 py-2 rounded-full border">
               <h1>What We Do?</h1>
             </div>
-            <span className="lg:leading-[1.58rem] md:leading-[1.34rem] leading-[1rem]">
+            <span className="lg:leading-[1.62rem] md:leading-[1.34rem] leading-[1rem]">
               We run educational and skill{"\u2011"}training programs, organize
               medical camps, encourage sports and support youth and startups,
               serving without discrimination of caste, creed, or religion.
             </span>
           </div>
-          <div className="font-(family-name:--font-abhya) flex-1 flex flex-col w-ful gap-[0.2rem] lg:gap-[0.49rem] md:gap-[0.4rem]">
+          <div className="font-(family-name:--font-abhya) flex-1 flex flex-col w-ful gap-[0.2rem] lg:gap-[0.51rem] md:gap-[0.48rem]">
             <div className=" self-start flex items-center justify-center font-bold leading-none! bg-brown text-white lg:text-[1.5rem] md:text-[1.4rem] border-brown px-3 py-2 rounded-full border">
               <h1>Why It Matters?</h1>
             </div>
-            <span className="lg:leading-[1.58rem] md:leading-[1.34rem] leading-[1rem]">
+            <span className="lg:leading-[1.62rem] md:leading-[1.34rem] leading-[1rem]">
               By promoting education, skill development, health, and socio
               {"\u2011"}economic welfare, we empower Startups, Youth and people
               in rural areas to build brighter futures—together.
