@@ -1,8 +1,7 @@
 import TopSection from "@/app/comp/section/top-section";
 import TextBoxSection from "@/app/comp/section/textbox-section";
-import Link from "next/link";
-import { MoveUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import BrandLink from "@/app/comp/brand-comp/brand-link";
 export default function AboutPage() {
   return (
     <div className="w-full">
@@ -59,13 +58,7 @@ function BoxSection() {
             </ul>
           </div>
         </div>
-        <Link
-          href={"/about/mission"}
-          className=" text-[clamp(0.98rem,1.6vw,1.5rem)] font-body border  rounded-[10rem] flex flex-row items-center justify-center font-semibold px-[1.4rem] py-[0.8rem] mt-[1.2rem] border-inherit  "
-        >
-          Know More
-          <MoveUpRight className="ml-[0.6rem]" />
-        </Link>
+        <BrandLink text="Know More" path="/about/mission" />
       </div>
 
       {/* box 2 */}
@@ -94,13 +87,7 @@ function BoxSection() {
             </ul>
           </div>
         </div>
-        <Link
-          href={"/about/belief"}
-          className="text-inherit border-inherit  text-[clamp(0.98rem,1.6vw,1.5rem)] font-body border  rounded-[10rem] flex flex-row items-center justify-center font-semibold px-[1.4rem] py-[0.8rem] mt-[1.2rem] "
-        >
-          Know More
-          <MoveUpRight className="ml-[0.6rem]" />
-        </Link>
+        <BrandLink text="Know More" path="/about/belief" />
       </div>
 
       {/* box 3 */}
@@ -154,13 +141,12 @@ function BoxSection() {
         </div>
         <div className="brand-secondary cutout   rounded-tr-[2.2rem] absolute bottom-0 left-0   z-[7] border-r-2 border-t-2">
           <div className=" relative h-full w-full  pr-[0.8rem] pt-[1rem] flex flex-col justify-end items-start ">
-            <Link
-              href={"/about/plan"}
-              className=" text-[clamp(0.98rem,1.6vw,1.5rem)] font-body border-2 border-brand rounded-[10rem] flex flex-row items-center justify-center font-semibold px-[1.4rem] py-[0.8rem] mt-[1.2rem]]  "
-            >
-              Know More
-              <MoveUpRight className="ml-[0.6rem]" />
-            </Link>
+            <BrandLink
+              text="Know More"
+              path="/about/plan"
+              className="border-brand border-2"
+            />
+
             <div className="cutOut1"></div>
             <div className="cutOut2"></div>
           </div>

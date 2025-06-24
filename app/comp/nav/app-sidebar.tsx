@@ -22,7 +22,7 @@ import {
 } from "@/components/ui/collapsible";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { Navitems } from "./nav-sidebar-contets";
+import { Navitems } from "../../data/nav-sidebar-contets";
 import { usePathname } from "next/navigation";
 
 export function AppSidebar() {

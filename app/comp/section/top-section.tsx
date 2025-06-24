@@ -12,14 +12,6 @@ export default function TopSection({ title }: { title: string }) {
           sizes="auto"
           className="md:w-[6.8rem] w-[5.5rem] h-auto relative lg:mt-[0.4rem] md:mt-[1rem] mt-[2rem]"
         />
-        {/* <Image
-          src={"/img/logo/FullLogoNgo.png"}
-          alt="Logo"
-          width={3571}
-          height={1131}
-          sizes="auto"
-          className="md:w-[13rem] w-[12.5rem] h-auto relative mt-[2rem]"
-        /> */}
       </div>
       <h1 className="font-(family-name:--font-abhya) font-medium text-[2.8rem] md:text-[4.4rem] text-brand md:leading-[5.7rem] leading-none! text-center mt-[0rem]">
         {title}

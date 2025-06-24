@@ -2,18 +2,22 @@ import React from "react";
 import TopSection from "@/app/comp/section/top-section";
 import TextBoxSection from "@/app/comp/section/textbox-section";
 import { cn } from "@/lib/utils";
+import ContentBoxSection from "@/app/comp/section/content-box-section";
+import { projects } from "@/app/data/projects";
 
 export default function Impact() {
   return (
     <div className="w-full">
+      <TopSection title="Our Impact" />
       <main
         className={cn(
-          "w-full lg:px-[6.5rem md:px-[2.8rem px-[2rem",
-          "px-[clamp(1.8rem,6.4vw,6.8rem)] md:px-[clamp(1.8rem,6.2vw,6.8rem)] px-[1.8rem]"
+          "w-full flex flex-col items-center justify-start ",
+          "lg:px-[clamp(1.8rem,6.4vw,6.8rem)] lg:gap-[2rem]",
+          "md:px-[clamp(1.8rem,6.2vw,6.8rem)] md:gap-[1.5rem]",
+          "px-[1.8rem] gap-[1.5rem]"
         )}
       >
         {" "}
-        <TopSection title="Our Impact" />
         <TextBoxSection title="Our Impact">
           At Vrinda Welfare Society, we believe that impact is not measured in
           numbers alone — it is seen in lives uplifted, minds awakened, and hope
@@ -25,6 +29,13 @@ export default function Impact() {
           educational movement that reflects our deep commitment to accessible,
           quality education for all.
         </TextBoxSection>
+        {projects["ImpactPage"].map((project, index) => (
+          <ContentBoxSection
+            id={project.id}
+            contents={project.contents}
+            key={project.id}
+          />
+        ))}
       </main>
     </div>
   );

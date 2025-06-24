@@ -13,7 +13,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { ExternalLink } from "lucide-react";
-import { Navitems } from "./nav-sidebar-contets";
+import { Navitems } from "../../data/nav-sidebar-contets";
 
 export function NavigationMenuDemo() {
   return (
@@ -30,28 +30,31 @@ export function NavigationMenuDemo() {
             {item.subItems.length > 0 &&
               (item.title === "Home" ? (
                 <NavigationMenuContent>
-                  <ul className="grid gap-[0.18rem] md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                    <li className="row-span-3">
-                      <NavigationMenuLink asChild>
-                        <Link
-                          className="to-[#6985b6] from-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b   no-underline outline-hidden select-none focus:shadow-md text-white!"
-                          href="/about/work"
+                  <ul className="grid gap-[0.18rem] md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] font-(family-name:--font-abhya) ">
+                    {item.subItems.map((component, index) =>
+                      index === 0 ? (
+                        <li className="row-span-3" key={component.title}>
+                          <NavigationMenuLink asChild>
+                            <Link
+                              className="to-[#6985b6] from-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b   no-underline outline-hidden select-none focus:shadow-md text-white!"
+                              href={component.href}
+                            >
+                              <div className="lg:text-[1.5rem] md:text-[1.4rem] font-semibold leading-none pt-[0.45rem] pb-[0.34rem] pl-[0.3romrem]">
+                                {component.title}
+                              </div>
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                      ) : (
+                        <ListItem
+                          key={component.title}
+                          title={component.title}
+                          href={component.href}
                         >
-                          <div className="mt-[] mb-[] font-(family-name:--font-abhya) lg:text-[1.5rem] md:text-[1.4rem] font-semibold leading-none pt-[0.45rem] pb-[0.34rem] pl-[0.3romrem]">
-                            Our Work
-                          </div>
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                    {item.subItems.map((component) => (
-                      <ListItem
-                        key={component.title}
-                        title={component.title}
-                        href={component.href}
-                      >
-                        {component.description}
-                      </ListItem>
-                    ))}
+                          {component.description}
+                        </ListItem>
+                      )
+                    )}
                   </ul>
                 </NavigationMenuContent>
               ) : (
