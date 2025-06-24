@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Project } from "@/app/types/content";
-export default function ContentBoxSection({ id, contents }: Project) {
+export default function ContentBoxSection({ contents }: Project) {
   return (
     <div className="brand-box w-full flex flex-col items-center justify-start">
       {contents.map((content, index) => (

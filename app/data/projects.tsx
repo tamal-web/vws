@@ -3,7 +3,7 @@ import BrandLink from "@/app/comp/brand-comp/brand-link";
 export const projects: ProjectsList = {
   ImpactPage: [
     {
-      id: "Mac",
+      id: "mac",
       contents: [
         {
           title: "MAC Classes",
@@ -87,7 +87,7 @@ export const projects: ProjectsList = {
       ],
     },
     {
-      id: "Skills",
+      id: "skill-development",
       contents: [
         {
           title: "💻 Skill Development",
@@ -148,7 +148,7 @@ export const projects: ProjectsList = {
       ],
     },
     {
-      id: "Library",
+      id: "library",
       contents: [
         {
           title: "📚 Community Library",
@@ -211,7 +211,7 @@ export const projects: ProjectsList = {
       ],
     },
     {
-      id: "Olympiad",
+      id: "olympiad",
       contents: [
         {
           title: "🏆 Olympiads",

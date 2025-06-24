@@ -29,7 +29,7 @@ export default function Impact() {
           educational movement that reflects our deep commitment to accessible,
           quality education for all.
         </TextBoxSection>
-        {projects["ImpactPage"].map((project, index) => (
+        {projects["ImpactPage"].map((project) => (
           <ContentBoxSection
             id={project.id}
             contents={project.contents}
