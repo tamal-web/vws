@@ -3,12 +3,12 @@ import { cn } from "@/lib/utils";
 import { Project } from "@/app/types/content";
 export default function ContentBoxSection({ contents }: Project) {
   return (
-    <div className="brand-box w-full flex flex-col items-center justify-start">
+    <div className="brand-box w-full flex flex-col items-center justify-start ">
       {contents.map((content, index) => (
         <div
           className={cn(
             content.image?.alt === "logo" ? " flex-row" : "flex-col",
-            "brand-box-content w-full px-[0.5rem] md:px-0 flex md:flex-row md:items-stretch items-center justify-center",
+            "brand-box-content w-full px-[0rem] md:px-0 flex md:flex-row md:items-stretch items-center justify-center",
             index !== 0 &&
               content.image?.alt !== "logo" &&
               content.image?.alt !== "svg" &&

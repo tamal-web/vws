@@ -14,7 +14,7 @@ export default function Impact() {
           "w-full flex flex-col items-center justify-start ",
           "lg:px-[clamp(1.8rem,6.4vw,6.8rem)] lg:gap-[2rem]",
           "md:px-[clamp(1.8rem,6.2vw,6.8rem)] md:gap-[1.5rem]",
-          "px-[1.8rem] gap-[1.5rem]"
+          "px-[0.76rem] gap-[1.5rem]"
         )}
       >
         {" "}
