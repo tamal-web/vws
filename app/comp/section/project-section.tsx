@@ -34,8 +34,8 @@ export default function ProjectSection({ className }: { className?: string }) {
 }
 
 function Card({ project }: { project: Project }) {
-  if (project.contents[0].title == "") return;
   const [isHovered, setIsHovered] = useState(false);
+  if (project.contents[0].title == "") return;
 
   return (
     <div
