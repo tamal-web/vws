@@ -2,6 +2,7 @@ import TopSection from "@/app/comp/section/top-section";
 import TextBoxSection from "@/app/comp/section/textbox-section";
 import { cn } from "@/lib/utils";
 import BrandLink from "@/app/comp/brand-comp/brand-link";
+import ProjectSection from "@/app/comp/section/project-section";
 export default function AboutPage() {
   return (
     <div className="w-full">
@@ -15,11 +16,13 @@ export default function AboutPage() {
         <TextBoxSection title="About Us">{` Vrinda Welfare Society was founded to address gaps in healthcare,
             education, and livelihood opportunities across rural Punjab. Our
             registered office is at SCO No. ${"\u202f"} 4, Kalsia Square, VIP
-            Road, Zirakpur (140603). Since inception, we${"\u2019"}ve been
+            Road, Zirakpur (140603). Since inception, we${"\u2019"}ve beenf
             committed to serving society${"\u2019"}s most vulnerable—orphans,
             disaster ${"\u2011"}affected families, persons with disabilities, and
             the economically disadvantaged—without any discrimination`}</TextBoxSection>
+
         <BoxSection />
+        <ProjectSection />
       </main>
     </div>
   );
@@ -35,9 +38,7 @@ function BoxSection() {
       {/* box 1 */}
       <div className="max-w-[32rem] border-brand! cardbox cardbox-apply grow-1 shrink-1 h-ful border-2 px-5 py-5 flex flex-col justify-between items-start rounded-[2rem]">
         <div className="flex flex-col lg:gap-[0.5rem] md:gap-[0.3rem] gap-[0.3rem]">
-          <h1 className="pt-[0.3rem] font-(family-name:--font-abhya) text-[clamp(2rem,4.05vw,3.7rem)] font-extrabold leading-none">
-            Our Mission
-          </h1>
+          <h1 className="pt-[0.3rem] heading">Our Mission</h1>
           <div className="font-(family-name:--font-abhya) ml-[1.8rem]">
             <ul className="list-disc text-[clamp(1rem,1.35vw,1.3rem)] space-y-[0.12rem] opacity-85 mb-[2.2rem] lg:gap-y-0!">
               <li>
@@ -64,9 +65,7 @@ function BoxSection() {
       {/* box 2 */}
       <div className=" cardbox max-w-[32rem] cardbox-apply grow-1 shrink-1  h-ful border-2 border-brand!  px-[1.5rem] py-5 flex flex-col justify-between items-start  rounded-[2rem] brand-primary  ">
         <div className=" flex flex-col lg:gap-[0.7rem] md:gap-[0.45rem] gap-[0.3rem]">
-          <h1 className="pt-[0.3rem] font-(family-name:--font-abhya) text-[clamp(2rem,4.05vw,3.7rem)] font-extrabold leading-none">
-            Our Beliefs
-          </h1>
+          <h1 className="pt-[0.3rem] heading">Our Beliefs</h1>
           <div className="font-(family-name:--font-abhya) ml-[1.8rem]">
             <ul className="list-disc text-[clamp(1rem,1.35vw,1.3rem)] space-y-[0.12rem] opacity-80 mb-[2.2rem] lg:gap-y-0!">
               <li>
@@ -94,9 +93,7 @@ function BoxSection() {
       <div className="cardbox  relative grow-1 shrink-1  min-h-[20rem] max-w-[32rem]">
         <div className="cardbox-apply    h-full w-full min-h-[20rem] relative flex flex-col justify-between items-start px-5 py-5 border-2 border-brand! rounded-[2rem]">
           <div className="flex flex-col lg:gap-[0.5rem] md:gap-[0.3rem] gap-[0.3rem]">
-            <h1 className="pt-[0.3rem] font-(family-name:--font-abhya) text-[clamp(2rem,4.05vw,3.7rem)] font-extrabold leading-none">
-              Our Future Plans
-            </h1>
+            <h1 className="pt-[0.3rem] heading">Our Future Plans</h1>
             <div className="font-(family-name:--font-abhya) ml-[1.8rem]">
               <ul className="list-disc text-[clamp(1rem,1.35vw,1.3rem)] space-y-[0.12rem] opacity-85 mb-[6.2rem] lg:gap-y-0!">
                 <li>

@@ -14,7 +14,7 @@ export const projects: ProjectsList = {
             height: 427,
           },
           children: (
-            <div className="flex flex-col items-start text-inheri ">
+            <div className="flex flex-col items-start">
               MAC Classes is more than just an institute — it is a safe space
               for learning, growth, and opportunity. Built under the guidance of
               Vrinda Welfare Society, it was founded with a single vision:
@@ -216,8 +216,8 @@ export const projects: ProjectsList = {
         {
           title: "🏆 Olympiads",
           image: {
-            src: "/img/about/impact/olympiad/olympiad1.svg",
-            alt: "svg",
+            src: "/img/about/impact/olympiad/olympiad1.png",
+            alt: "png",
             width: 100,
             height: 100,
           },
@@ -233,8 +233,8 @@ export const projects: ProjectsList = {
         },
         {
           image: {
-            src: "/img/about/impact/olympiad/olympiad2.svg",
-            alt: "svg",
+            src: "/img/about/impact/olympiad/olympiad2.png",
+            alt: "png",
             width: 100,
             height: 100,
           },

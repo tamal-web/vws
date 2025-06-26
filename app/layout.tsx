@@ -54,7 +54,7 @@ export default function RootLayout({
       <body className={`${abhya.variable} ${acme.variable} antialiased`}>
         <SidebarProvider defaultOpen={false}>
           <AppSidebar />
-          <main className="relative w-[100dvw]">
+          <main className="relative w-[100dvw] overflow-x-hidde">
             {" "}
             <div>
               <Nav />
